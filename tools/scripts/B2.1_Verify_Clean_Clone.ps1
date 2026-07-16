@@ -215,6 +215,8 @@ function Initialize-IdfProcessEnvironment {
     return "ESP-IDF process environment initialized with CMake, Ninja and ESP32-S3 toolchain."
 }
 
+
+
 New-Item -ItemType Directory -Path $EvidenceDir -Force | Out-Null
 
 # Check the committed source before creating evidence files in the source tree.
