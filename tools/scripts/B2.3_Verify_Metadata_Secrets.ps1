@@ -215,14 +215,26 @@ try {
         }
 
         try {
-            $Findings = @($Text | ConvertFrom-Json)
+            $ParsedReport = ConvertFrom-Json -InputObject $Text
         }
         catch {
             throw "Gitleaks report is not valid JSON. Exit code=$($Process.ExitCode). Review $SecretLogPath and $SecretReportPath."
         }
 
-        if ($Findings.Count -ne 0) {
-            throw "Gitleaks found $($Findings.Count) unresolved secret finding(s). Review the redacted report: $SecretReportPath"
+        # ConvertFrom-Json can return the whole JSON array as one pipeline object in
+        # Windows PowerShell 5.1. Count only records that have Gitleaks finding fields.
+        $FindingCount = @(
+            $ParsedReport |
+                Where-Object {
+                    $PropertyNames = @($_.PSObject.Properties.Name)
+                    ($PropertyNames -contains "RuleID") -and
+                    ($PropertyNames -contains "File") -and
+                    ($PropertyNames -contains "Commit")
+                }
+        ).Count
+
+        if ($FindingCount -ne 0) {
+            throw "Gitleaks found $FindingCount unresolved secret finding(s). Review the redacted report: $SecretReportPath"
         }
 
         if ($Process.ExitCode -ne 0) {
