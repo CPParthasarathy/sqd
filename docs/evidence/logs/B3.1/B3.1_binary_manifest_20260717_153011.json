@@ -1,0 +1,107 @@
+﻿[
+    {
+        "Profile":  "debug",
+        "Role":  "application-bin",
+        "RelativePath":  "build\\b3.1\\debug\\sqd_firmware.bin",
+        "SizeBytes":  183008,
+        "SHA256":  "E68610D7E360B61EE8174F200B6DF8EEF7401F9B12723A18A13230768E7C57F3"
+    },
+    {
+        "Profile":  "debug",
+        "Role":  "application-elf",
+        "RelativePath":  "build\\b3.1\\debug\\sqd_firmware.elf",
+        "SizeBytes":  3765988,
+        "SHA256":  "1EA3BD6708C6CA58E91CA50AC6F7E7253E36E9C5B80FA41BE15CACFBD1084070"
+    },
+    {
+        "Profile":  "debug",
+        "Role":  "flash-0x0",
+        "RelativePath":  "build\\b3.1\\debug\\bootloader\\bootloader.bin",
+        "SizeBytes":  27504,
+        "SHA256":  "2BA2438611D9E01D9082777F8B1BC69C2ED3325851E6D31BA513E35ADC0D1E84"
+    },
+    {
+        "Profile":  "debug",
+        "Role":  "flash-0x8000",
+        "RelativePath":  "build\\b3.1\\debug\\partition_table\\partition-table.bin",
+        "SizeBytes":  3072,
+        "SHA256":  "7F00B6C042A89B15B0CAC534F82ED988CAF29278FF5700B0C511EB1B5BB7C820"
+    },
+    {
+        "Profile":  "debug",
+        "Role":  "linker-map",
+        "RelativePath":  "build\\b3.1\\debug\\sqd_firmware.map",
+        "SizeBytes":  3763013,
+        "SHA256":  "8D465AC073C7C5F0CBD4A6EA327CF67A281A03048483942676907B705BF5A3C1"
+    },
+    {
+        "Profile":  "production",
+        "Role":  "application-bin",
+        "RelativePath":  "build\\b3.1\\production\\sqd_firmware.bin",
+        "SizeBytes":  124480,
+        "SHA256":  "93BB72133C819A4217BD8867DA44AD51EE6C4331837C6B2501C88DE568FFEC0A"
+    },
+    {
+        "Profile":  "production",
+        "Role":  "application-elf",
+        "RelativePath":  "build\\b3.1\\production\\sqd_firmware.elf",
+        "SizeBytes":  3464196,
+        "SHA256":  "5994E55CB4FAB8CCA7C2A6F854EEDD36CFDC7DE9C9A0B3961A406EA15E6EB1D0"
+    },
+    {
+        "Profile":  "production",
+        "Role":  "flash-0x0",
+        "RelativePath":  "build\\b3.1\\production\\bootloader\\bootloader.bin",
+        "SizeBytes":  17776,
+        "SHA256":  "9F6F3A337C40F8CCA1B17A8EC689DD77A270158594D07A55B04AB4CF97DB3F98"
+    },
+    {
+        "Profile":  "production",
+        "Role":  "flash-0x8000",
+        "RelativePath":  "build\\b3.1\\production\\partition_table\\partition-table.bin",
+        "SizeBytes":  3072,
+        "SHA256":  "7F00B6C042A89B15B0CAC534F82ED988CAF29278FF5700B0C511EB1B5BB7C820"
+    },
+    {
+        "Profile":  "production",
+        "Role":  "linker-map",
+        "RelativePath":  "build\\b3.1\\production\\sqd_firmware.map",
+        "SizeBytes":  3397034,
+        "SHA256":  "5EE69A67342F4D2C11A99F011BC053EAB7E40487FE1DB9B4986255F34D409873"
+    },
+    {
+        "Profile":  "validation",
+        "Role":  "application-bin",
+        "RelativePath":  "build\\b3.1\\validation\\sqd_firmware.bin",
+        "SizeBytes":  160336,
+        "SHA256":  "8D066D5DF0377C32C9FCFB518795849D350311B2921732098DA3FE118FF90A02"
+    },
+    {
+        "Profile":  "validation",
+        "Role":  "application-elf",
+        "RelativePath":  "build\\b3.1\\validation\\sqd_firmware.elf",
+        "SizeBytes":  3709744,
+        "SHA256":  "CDF29DBC8E2AD4E19C1FC56487A0FA5C9254B3F8F16AA16614D343872FABCAF4"
+    },
+    {
+        "Profile":  "validation",
+        "Role":  "flash-0x0",
+        "RelativePath":  "build\\b3.1\\validation\\bootloader\\bootloader.bin",
+        "SizeBytes":  21056,
+        "SHA256":  "5B46870C59ABF3EE4D43E258B6A4A330ACE2E96B8C21864D8C7BCB7D513E9358"
+    },
+    {
+        "Profile":  "validation",
+        "Role":  "flash-0x8000",
+        "RelativePath":  "build\\b3.1\\validation\\partition_table\\partition-table.bin",
+        "SizeBytes":  3072,
+        "SHA256":  "7F00B6C042A89B15B0CAC534F82ED988CAF29278FF5700B0C511EB1B5BB7C820"
+    },
+    {
+        "Profile":  "validation",
+        "Role":  "linker-map",
+        "RelativePath":  "build\\b3.1\\validation\\sqd_firmware.map",
+        "SizeBytes":  3580245,
+        "SHA256":  "E896BBF146F52DF3292CCECA7F0F529E9AD3A911C8FA63D5C6A45545C6CC4218"
+    }
+]

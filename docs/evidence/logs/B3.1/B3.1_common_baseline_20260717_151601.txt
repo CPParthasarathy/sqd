@@ -1,0 +1,32 @@
+﻿============================================================
+B3.1 COMMON BASELINE INITIALIZATION
+============================================================
+Timestamp:       2026-07-17 15:16:10 +02:00
+Repository:      D:\OneDrive\SQD
+Branch:          feat/b3.1-build-profiles
+Commit:          ba17e74ae336249900466298833ad52a8d7ce406
+ESP-IDF path:    D:\esp\v6.0.2\esp-idf
+ESP-IDF version: ESP-IDF v6.0.2
+
+Original profile files:
+sdkconfig.defaults | 59 bytes | SHA256 FA5ECEFDFCC9C40B423BFC26E2B71CD998227FC907F8D75E4958F7D2BA6C81B8
+# Configuration baseline intentionally reserved for B3.1.
+
+sdkconfig.defaults.debug | 59 bytes | SHA256 FA5ECEFDFCC9C40B423BFC26E2B71CD998227FC907F8D75E4958F7D2BA6C81B8
+# Configuration baseline intentionally reserved for B3.1.
+
+sdkconfig.defaults.validation | 59 bytes | SHA256 FA5ECEFDFCC9C40B423BFC26E2B71CD998227FC907F8D75E4958F7D2BA6C81B8
+# Configuration baseline intentionally reserved for B3.1.
+
+sdkconfig.defaults.production | 59 bytes | SHA256 FA5ECEFDFCC9C40B423BFC26E2B71CD998227FC907F8D75E4958F7D2BA6C81B8
+# Configuration baseline intentionally reserved for B3.1.
+
+Generated common baseline:
+sdkconfig.defaults | 234 bytes
+SHA256 5156C3710F06D402D77957A4794BFBDA4C68E5E990C21C4848514B8C4931AFCF
+
+# This file was generated using idf.py save-defconfig or menuconfig [D] key. It can be edited manually.
+# Espressif IoT Development Framework (ESP-IDF) 6.0.2 Project Minimal Configuration
+#
+# default:
+CONFIG_IDF_TARGET="esp32s3"
