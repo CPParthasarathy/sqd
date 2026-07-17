@@ -167,16 +167,69 @@ try {
             "--report-path", $SecretReportPath,
             "--redact=100", "--no-banner", "--no-color", "--exit-code", "1"
         )
-        $Output = & $script:GitleaksExe @Args 2>&1
-        $Exit = $LASTEXITCODE
-        $Output | Set-Content $SecretLogPath -Encoding UTF8
-        if ($Exit -ne 0) { throw "Gitleaks exit code $Exit. Review $SecretLogPath and $SecretReportPath." }
-        if (-not (Test-Path $SecretReportPath -PathType Leaf)) { "[]" | Set-Content $SecretReportPath -Encoding UTF8 }
-        $Text = (Get-Content $SecretReportPath -Raw).Trim()
-        if ([string]::IsNullOrWhiteSpace($Text)) { $Text="[]"; "[]" | Set-Content $SecretReportPath -Encoding UTF8 }
-        $Findings = @($Text | ConvertFrom-Json)
-        if ($Findings.Count -ne 0) { throw "$($Findings.Count) unresolved finding(s)." }
-        "Zero unresolved findings; report=$SecretReportPath"
+
+        # Gitleaks writes normal progress information to stderr. Windows PowerShell 5.1
+        # can promote redirected native stderr to a terminating NativeCommandError when
+        # ErrorActionPreference is Stop. Start-Process preserves the real process exit
+        # code and captures both streams without misclassifying informational output.
+        $StdoutPath = Join-Path $EvidenceDirectory "B2.3_gitleaks_stdout_$Timestamp.tmp"
+        $StderrPath = Join-Path $EvidenceDirectory "B2.3_gitleaks_stderr_$Timestamp.tmp"
+
+        Remove-Item -LiteralPath $StdoutPath, $StderrPath -Force -ErrorAction SilentlyContinue
+
+        $Process = Start-Process `
+            -FilePath $script:GitleaksExe `
+            -ArgumentList $Args `
+            -WorkingDirectory $RepoRoot `
+            -NoNewWindow `
+            -Wait `
+            -PassThru `
+            -RedirectStandardOutput $StdoutPath `
+            -RedirectStandardError $StderrPath
+
+        $CapturedOutput = New-Object System.Collections.Generic.List[string]
+
+        if (Test-Path -LiteralPath $StdoutPath -PathType Leaf) {
+            Get-Content -LiteralPath $StdoutPath | ForEach-Object {
+                [void]$CapturedOutput.Add([string]$_)
+            }
+        }
+
+        if (Test-Path -LiteralPath $StderrPath -PathType Leaf) {
+            Get-Content -LiteralPath $StderrPath | ForEach-Object {
+                [void]$CapturedOutput.Add([string]$_)
+            }
+        }
+
+        $CapturedOutput | Set-Content -LiteralPath $SecretLogPath -Encoding UTF8
+        Remove-Item -LiteralPath $StdoutPath, $StderrPath -Force -ErrorAction SilentlyContinue
+
+        if (-not (Test-Path -LiteralPath $SecretReportPath -PathType Leaf)) {
+            "[]" | Set-Content -LiteralPath $SecretReportPath -Encoding UTF8
+        }
+
+        $Text = (Get-Content -LiteralPath $SecretReportPath -Raw).Trim()
+        if ([string]::IsNullOrWhiteSpace($Text)) {
+            $Text = "[]"
+            "[]" | Set-Content -LiteralPath $SecretReportPath -Encoding UTF8
+        }
+
+        try {
+            $Findings = @($Text | ConvertFrom-Json)
+        }
+        catch {
+            throw "Gitleaks report is not valid JSON. Exit code=$($Process.ExitCode). Review $SecretLogPath and $SecretReportPath."
+        }
+
+        if ($Findings.Count -ne 0) {
+            throw "Gitleaks found $($Findings.Count) unresolved secret finding(s). Review the redacted report: $SecretReportPath"
+        }
+
+        if ($Process.ExitCode -ne 0) {
+            throw "Gitleaks failed with exit code $($Process.ExitCode) but produced no findings. Review execution log: $SecretLogPath"
+        }
+
+        "Zero unresolved findings across complete Git history; commits scanned successfully; report=$SecretReportPath"
     }
 }
 finally {
