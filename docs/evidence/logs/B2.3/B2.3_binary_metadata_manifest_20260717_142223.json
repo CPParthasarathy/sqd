@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "binary": "D:\\OneDrive\\SQD\\verification\\b2_3_metadata\\build\\sqd_b2_3_metadata.bin",
+  "size_bytes": 165808,
+  "sha256": "9082836F666E3102578B8A27D95EDE76E58A62EEFDB19B95B92566429D919C16",
+  "tokens": [
+    {
+      "token": "SQD_META_V1",
+      "found": true
+    },
+    {
+      "token": "version=0.1.0-dev.0",
+      "found": true
+    },
+    {
+      "token": "git=e9dff56f100c683538adda27fe0d5b3039a54afe",
+      "found": true
+    },
+    {
+      "token": "profile=baseline",
+      "found": true
+    },
+    {
+      "token": "target=esp32s3",
+      "found": true
+    },
+    {
+      "token": "hardware=heltec-wifi-lora-32-v3",
+      "found": true
+    },
+    {
+      "token": "compiler=",
+      "found": true
+    },
+    {
+      "token": "v6.0.2",
+      "found": true
+    },
+    {
+      "token": "e9dff56f100c",
+      "found": true
+    }
+  ],
+  "all_tokens_found": true
+}

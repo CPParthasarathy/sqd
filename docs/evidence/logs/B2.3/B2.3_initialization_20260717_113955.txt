@@ -1,0 +1,50 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260717113955
+Username: PMAA\parth
+RunAs User: PMAA\parth
+Configuration Name: 
+Machine: PMAA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File D:\OneDrive\SQD\tools\scripts\B2.3_Initialize_Metadata_Secrets.ps1
+Process ID: 1684
+PSVersion: 5.1.26100.8875
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8875
+BuildVersion: 10.0.26100.8875
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+B2.3 firmware metadata and secret-control initialization
+Repository: D:\OneDrive\SQD
+
+[PASS] Feature-branch prerequisite - Branch=feat/b2.3-firmware-provenance; tracked tree clean
+[PASS] Semantic version source - 0.1.0-dev.0
+[PASS] Firmware metadata component - D:\OneDrive\SQD\components\build_metadata
+[PASS] Metadata verification application - D:\OneDrive\SQD\verification\b2_3_metadata
+[PASS] Gitleaks policy - .gitleaks.toml and .gitleaksignore
+[PASS] B2.3 policy document - D:\OneDrive\SQD\docs\phase-b\B2.3_Firmware_Metadata_and_Secret_Controls.md
+[PASS] Toolkit presence - 4 scripts present
+
+?? .gitleaks.toml
+?? .gitleaksignore
+?? components/build_metadata/
+?? docs/evidence/logs/B2.3/
+?? docs/phase-b/B2.3_Firmware_Metadata_and_Secret_Controls.md
+?? tools/scripts/B2.3_Initialize_Metadata_Secrets.ps1
+?? tools/scripts/B2.3_Inspect_Binary.py
+?? tools/scripts/B2.3_Install_Gitleaks.ps1
+?? tools/scripts/B2.3_Verify_Metadata_Secrets.ps1
+?? verification/b2_3_metadata/
+[PASS] Initialization change set - Review and commit the B2.3 files shown above
+
+B2.3 initialization summary
+PASS: 8
+FAIL: 0
+Transcript: D:\OneDrive\SQD\docs\evidence\logs\B2.3\B2.3_initialization_20260717_113955.txt
+CSV:        D:\OneDrive\SQD\docs\evidence\logs\B2.3\B2.3_initialization_results_20260717_113955.csv
+**********************
+Windows PowerShell transcript end
+End time: 20260717113956
+**********************

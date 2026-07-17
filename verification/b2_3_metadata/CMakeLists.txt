@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+get_filename_component(SQD_REPO_ROOT "${CMAKE_CURRENT_LIST_DIR}/../.." ABSOLUTE)
+file(READ "${SQD_REPO_ROOT}/VERSION" SQD_PROJECT_VERSION)
+string(STRIP "${SQD_PROJECT_VERSION}" SQD_PROJECT_VERSION)
+set(PROJECT_VER "${SQD_PROJECT_VERSION}")
+set(EXTRA_COMPONENT_DIRS "${SQD_REPO_ROOT}/components/build_metadata")
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(sqd_b2_3_metadata)

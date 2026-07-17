@@ -1,0 +1,15 @@
+title = "SQD firmware secret-detection policy"
+[extend]
+useDefault = true
+
+[[rules]]
+id = "sqd-private-key-material"
+description = "Private-key PEM material"
+regex = '''-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----'''
+keywords = ["PRIVATE KEY"]
+
+[[rules]]
+id = "sqd-password-assignment"
+description = "Hard-coded password assignment"
+regex = '''(?i)(?:password|passwd|pwd)\s*[:=]\s*["'][^"'\r\n]{8,}["']'''
+keywords = ["password", "passwd", "pwd"]
