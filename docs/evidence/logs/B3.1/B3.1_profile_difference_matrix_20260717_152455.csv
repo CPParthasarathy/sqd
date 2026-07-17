@@ -1,0 +1,4 @@
+﻿"Profile","Optimization","Assertions","BootloaderLog","ApplicationLog","MaximumLog","DynamicLog","StackCheck","HeapCheck","PanicAction","CoreDump"
+"Debug","Debug","Enabled","Debug","Debug","Verbose","Enabled","Canary","Light poisoning","Print and halt","UART"
+"Validation","Size","Enabled","Info","Info","Debug","Enabled","Canary","Light poisoning","Print and reboot","UART"
+"Production","Size","Silent","Warning","Warning","Same as default","Disabled","Canary","No poisoning","Print and reboot","Disabled"
