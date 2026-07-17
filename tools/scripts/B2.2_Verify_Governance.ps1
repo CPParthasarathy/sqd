@@ -14,6 +14,8 @@ $Timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
 $TranscriptPath = Join-Path $EvidenceDirectory "B2.2_governance_verification_$Timestamp.txt"
 $CsvPath = Join-Path $EvidenceDirectory "B2.2_governance_results_$Timestamp.csv"
 $ApiEvidencePath = Join-Path $EvidenceDirectory "B2.2_GitHub_repository_settings_$Timestamp.json"
+$MergeSettingsScreenshot = Join-Path $RepoRoot "docs\evidence\screenshots\B2.2\B2.2_merge_settings.png"
+$ProtectionScreenshot = Join-Path $RepoRoot "docs\evidence\screenshots\B2.2\B2.2_main_protection_ruleset.png"
 $ExpectedRemote = "https://github.com/$GitHubOwner/$GitHubRepository.git"
 $RepositoryApi = "https://api.github.com/repos/$GitHubOwner/$GitHubRepository"
 $BranchApi = "$RepositoryApi/branches/main"
@@ -86,6 +88,20 @@ function Invoke-Git {
     if ($LASTEXITCODE -ne 0) {
         throw "git $($Arguments -join ' ') failed with exit code $LASTEXITCODE."
     }
+}
+
+function Get-OptionalProperty {
+    param(
+        [Parameter(Mandatory)][object]$InputObject,
+        [Parameter(Mandatory)][string]$Name
+    )
+
+    $Property = $InputObject.PSObject.Properties[$Name]
+    if ($null -eq $Property) {
+        return $null
+    }
+
+    return $Property.Value
 }
 
 function Write-Utf8Lf {
@@ -311,31 +327,59 @@ try {
     Invoke-Check -Name "GitHub repository merge settings" -Action {
         $Repository = Invoke-RestMethod -Uri $RepositoryApi -Headers $Headers -Method Get
 
+        $DefaultBranch = Get-OptionalProperty -InputObject $Repository -Name "default_branch"
+        $AllowSquashMerge = Get-OptionalProperty -InputObject $Repository -Name "allow_squash_merge"
+        $AllowMergeCommit = Get-OptionalProperty -InputObject $Repository -Name "allow_merge_commit"
+        $AllowRebaseMerge = Get-OptionalProperty -InputObject $Repository -Name "allow_rebase_merge"
+        $DeleteBranchOnMerge = Get-OptionalProperty -InputObject $Repository -Name "delete_branch_on_merge"
+
         $SettingsEvidence = [ordered]@{
-            repository = $Repository.full_name
+            repository = Get-OptionalProperty -InputObject $Repository -Name "full_name"
             checked_at_utc = (Get-Date).ToUniversalTime().ToString("o")
-            default_branch = $Repository.default_branch
-            allow_squash_merge = $Repository.allow_squash_merge
-            allow_merge_commit = $Repository.allow_merge_commit
-            allow_rebase_merge = $Repository.allow_rebase_merge
-            delete_branch_on_merge = $Repository.delete_branch_on_merge
+            default_branch = $DefaultBranch
+            allow_squash_merge = $AllowSquashMerge
+            allow_merge_commit = $AllowMergeCommit
+            allow_rebase_merge = $AllowRebaseMerge
+            delete_branch_on_merge = $DeleteBranchOnMerge
+            merge_settings_screenshot = $MergeSettingsScreenshot
         }
 
         Write-Utf8Lf -Path $ApiEvidencePath -Content ($SettingsEvidence | ConvertTo-Json -Depth 5)
 
-        if ($Repository.default_branch -ne "main") {
-            throw "GitHub default branch must be main; detected '$($Repository.default_branch)'."
+        if ($DefaultBranch -ne "main") {
+            throw "GitHub default branch must be main; detected '$DefaultBranch'."
         }
-        if (-not $Repository.allow_squash_merge) {
+
+        $MergeFields = @(
+            $AllowSquashMerge,
+            $AllowMergeCommit,
+            $AllowRebaseMerge,
+            $DeleteBranchOnMerge
+        )
+
+        $MissingMergeField = @($MergeFields | Where-Object { $null -eq $_ }).Count -gt 0
+
+        if ($MissingMergeField) {
+            if (-not (Test-Path -LiteralPath $MergeSettingsScreenshot -PathType Leaf)) {
+                throw "GitHub API omitted one or more merge-setting fields. Add manual evidence: $MergeSettingsScreenshot"
+            }
+
+            return "GitHub API omitted administrator merge fields; default branch is main and manual settings evidence exists: $MergeSettingsScreenshot"
+        }
+
+        if (-not [bool]$AllowSquashMerge) {
             throw "GitHub squash merging is disabled."
         }
-        if ($Repository.allow_merge_commit) {
+
+        if ([bool]$AllowMergeCommit) {
             throw "GitHub merge commits remain enabled."
         }
-        if ($Repository.allow_rebase_merge) {
+
+        if ([bool]$AllowRebaseMerge) {
             throw "GitHub rebase merging remains enabled."
         }
-        if (-not $Repository.delete_branch_on_merge) {
+
+        if (-not [bool]$DeleteBranchOnMerge) {
             throw "GitHub automatic branch deletion is disabled."
         }
 
@@ -344,12 +388,21 @@ try {
 
     Invoke-Check -Name "GitHub main protection" -Action {
         $Branch = Invoke-RestMethod -Uri $BranchApi -Headers $Headers -Method Get
+        $Protected = Get-OptionalProperty -InputObject $Branch -Name "protected"
 
-        if (-not $Branch.protected) {
-            throw "GitHub reports main as unprotected. Activate the B2.2 main-protection rule."
+        if ($null -eq $Protected) {
+            throw "GitHub branch response omitted protection state."
         }
 
-        return "GitHub reports main as protected."
+        if (-not [bool]$Protected) {
+            throw "GitHub reports main as unprotected. Activate the B2.2 main-protection rule and save evidence to $ProtectionScreenshot"
+        }
+
+        if (-not (Test-Path -LiteralPath $ProtectionScreenshot -PathType Leaf)) {
+            throw "GitHub reports main as protected, but required configuration evidence is missing: $ProtectionScreenshot"
+        }
+
+        return "GitHub reports main as protected; ruleset evidence exists: $ProtectionScreenshot"
     }
 
     Invoke-Check -Name "Pull-request bootstrap evidence" -Action {
