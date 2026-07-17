@@ -1,0 +1,10 @@
+# <type>[optional scope][!]: <imperative description>
+#
+# Allowed types:
+# feat, fix, docs, refactor, perf, test, build, ci, chore, revert
+#
+# WBS: Bx.y
+# Refs: #issue
+# Verification: command or evidence path
+#
+# BREAKING CHANGE: describe incompatible behavior or contract changes

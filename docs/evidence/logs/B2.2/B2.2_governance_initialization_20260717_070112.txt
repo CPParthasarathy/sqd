@@ -1,0 +1,65 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260717070112
+Username: PMAA\parth
+RunAs User: PMAA\parth
+Configuration Name: 
+Machine: PMAA (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File D:\OneDrive\SQD\tools\scripts\B2.2_Initialize_Governance.ps1
+Process ID: 13096
+PSVersion: 5.1.26100.8875
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8875
+BuildVersion: 10.0.26100.8875
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+B2.2 source-control and versioning governance initialization
+Repository:  D:\OneDrive\SQD
+Remote:      https://github.com/CPParthasarathy/SQD.git
+Work branch: docs/b2.2-governance
+
+[PASS] B2.1 repository prerequisite - Repository HEAD: e6b87c1bc8106eed5bf5352f921906d3d814aef7
+[PASS] Tracked working tree clean - No tracked modifications are present before B2.2.
+[PASS] GitHub origin - https://github.com/CPParthasarathy/SQD.git
+[PASS] B2.2 work branch - docs/b2.2-governance
+[PASS] Source-control policy - D:\OneDrive\SQD\docs\phase-b\B2.2_Source_Control_and_Versioning_Policy.md
+[PASS] Contributor workflow - CONTRIBUTING.md
+[PASS] Pull-request template - D:\OneDrive\SQD\.github\pull_request_template.md
+[PASS] Ownership and commit template - CODEOWNERS and repository-local Git governance settings installed.
+[PASS] Version and changelog baseline - VERSION=0.1.0-dev.0
+[PASS] GitHub configuration checklist - GitHub configuration and evidence checklist created.
+[PASS] Release-notes configuration - .github/release.yml
+[PASS] Required B2.2 files - 11 required B2.2 files verified.
+
+B2.2 changes:
+?? .github/CODEOWNERS
+?? .github/pull_request_template.md
+?? .github/release.yml
+?? .gitmessage
+?? CHANGELOG.md
+?? CONTRIBUTING.md
+?? VERSION
+?? docs/evidence/logs/B2.1/B2.1_clean_clone_results_20260716_113644.csv
+?? docs/evidence/logs/B2.1/B2.1_clean_clone_verification_20260716_113644.txt
+?? docs/evidence/logs/B2.2/
+?? docs/evidence/screenshots/B2.2/
+?? docs/phase-b/B2.2_GitHub_Configuration_Checklist.md
+?? docs/phase-b/B2.2_Source_Control_and_Versioning_Policy.md
+?? tools/scripts/B2.2_Initialize_Governance.ps1
+?? tools/scripts/B2.2_Verify_Governance.ps1
+[PASS] Git status capture - Review, stage and commit the displayed B2.2 change set.
+
+B2.2 initialization summary
+PASS: 13
+FAIL: 0
+SKIP: 0
+WARN: 0
+Transcript: D:\OneDrive\SQD\docs\evidence\logs\B2.2\B2.2_governance_initialization_20260717_070112.txt
+CSV:        D:\OneDrive\SQD\docs\evidence\logs\B2.2\B2.2_governance_initialization_20260717_070112.csv
+**********************
+Windows PowerShell transcript end
+End time: 20260717070113
+**********************
