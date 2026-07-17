@@ -172,8 +172,8 @@ try {
         # can promote redirected native stderr to a terminating NativeCommandError when
         # ErrorActionPreference is Stop. Start-Process preserves the real process exit
         # code and captures both streams without misclassifying informational output.
-        $StdoutPath = Join-Path $EvidenceDirectory "B2.3_gitleaks_stdout_$Timestamp.tmp"
-        $StderrPath = Join-Path $EvidenceDirectory "B2.3_gitleaks_stderr_$Timestamp.tmp"
+        $StdoutPath = Join-Path $EvidenceDir "B2.3_gitleaks_stdout_$Timestamp.tmp"
+        $StderrPath = Join-Path $EvidenceDir "B2.3_gitleaks_stderr_$Timestamp.tmp"
 
         Remove-Item -LiteralPath $StdoutPath, $StderrPath -Force -ErrorAction SilentlyContinue
 
