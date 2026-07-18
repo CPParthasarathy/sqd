@@ -1,0 +1,50 @@
+[
+    {
+        "Role":  "application-bin",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\sqd_firmware.bin",
+        "RelativePath":  "build\\b3.2\\validation\\sqd_firmware.bin",
+        "SizeBytes":  160352,
+        "SHA256":  "FD185F205942693061728946D16155F1150D198625EE9085CE9C94DC2A9BEB4C",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:36.4747749Z"
+    },
+    {
+        "Role":  "application-elf",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\sqd_firmware.elf",
+        "RelativePath":  "build\\b3.2\\validation\\sqd_firmware.elf",
+        "SizeBytes":  3709744,
+        "SHA256":  "55829D2ABDA4C5FCF60A1450DE4520EBD591D4024E4A794176F852D83D40A3AA",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:36.0374997Z"
+    },
+    {
+        "Role":  "flash-0x0",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\bootloader\\bootloader.bin",
+        "RelativePath":  "build\\b3.2\\validation\\bootloader\\bootloader.bin",
+        "SizeBytes":  21056,
+        "SHA256":  "10CCB821CB89ED7396A20BBD2057945AC6A828635BA4DF43F0B1D424BF4BC8E1",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:19.6560437Z"
+    },
+    {
+        "Role":  "flash-0x8000",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\partition_table\\partition-table.bin",
+        "RelativePath":  "build\\b3.2\\validation\\partition_table\\partition-table.bin",
+        "SizeBytes":  3072,
+        "SHA256":  "7F00B6C042A89B15B0CAC534F82ED988CAF29278FF5700B0C511EB1B5BB7C820",
+        "LastWriteTimeUtc":  "2026-07-18T09:05:31.4776993Z"
+    },
+    {
+        "Role":  "generated-sdkconfig",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\sdkconfig",
+        "RelativePath":  "build\\b3.2\\validation\\sdkconfig",
+        "SizeBytes":  90968,
+        "SHA256":  "C4DEC763B8D2786F1A289ACE7BF70F69E12E983C1C3F54011970B54763A92DFC",
+        "LastWriteTimeUtc":  "2026-07-18T09:05:07.8815414Z"
+    },
+    {
+        "Role":  "linker-map",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\sqd_firmware.map",
+        "RelativePath":  "build\\b3.2\\validation\\sqd_firmware.map",
+        "SizeBytes":  3580245,
+        "SHA256":  "F451CD79B4A49138649617523F6CBF84BC3C8B9039AD4A06A55EB34E638AC0A8",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:36.0518572Z"
+    }
+]
