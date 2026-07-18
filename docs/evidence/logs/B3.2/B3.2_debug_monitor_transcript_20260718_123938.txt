@@ -1,0 +1,235 @@
+============================================================
+B3.2 CONTROLLED SERIAL CAPTURE
+============================================================
+Started:                   2026-07-18T12:39:52.0802381+02:00
+Profile:                   debug
+Branch:                    feat/b3.2-controlled-tooling
+Commit:                    fa275874dc36887e8f38f5ac470ae196564c3833
+ESP-IDF:                   ESP-IDF v6.0.2
+Target:                    esp32s3
+Hardware compatibility:    heltec-wifi-lora-32-v3
+Build directory:           D:\OneDrive\SQD\build\b3.2\debug
+Serial port:               COM3
+Serial device:             Silicon Labs CP210x USB to UART Bridge (COM3)
+Baud:                      115200
+Capture duration seconds:  15
+Application ELF:           D:\OneDrive\SQD\build\b3.2\debug\sqd_firmware.elf
+ELF SHA256:                63F46503FBC3F84964B91AF4490ECDC3FAA4039142C29B09E43AC0E6D41E6B84
+============================================================
+ddr=0x00010000 (was 0xffffffff)
+I (290) esp_image: segm�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1ee8
+load:0x403c8700,len:0x11c8
+load:0x403cb700,len:0x3a64
+entry 0x403c8a00
+I (27) boot: ESP-IDF v6.0.2 2nd stage bootloader
+I (28) boot: compile time Jul 18 2026 11:01:39
+I (28) boot: Multicore bootloader
+D (28) bootloader_flash: XMC chip detected by RDID (00204017), skip.
+D (34) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)
+D (40) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)
+D (47) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)
+D (53) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)
+D (60) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)
+D (66) bootloader_flash: mmu set block paddr=0x00000000 (was 0xffffffff)
+I (72) boot: chip revision: v0.2
+I (75) boot: efuse block revision: v1.4
+D (79) boot.esp32s3: magic e9
+D (82) boot.esp32s3: segments 03
+D (84) boot.esp32s3: spi_mode 02
+D (87) boot.esp32s3: spi_speed 0f
+D (90) boot.esp32s3: spi_size 03
+I (93) boot.esp32s3: Boot SPI Speed : 80MHz
+I (97) boot.esp32s3: SPI Mode       : DIO
+I (101) boot.esp32s3: SPI Flash Size : 8MB
+D (105) boot: Enabling RTCWDT(9000 ms)
+I (108) boot: Enabling RNG early entropy source...
+D (113) bootloader_flash: rodata starts from paddr=0x00008000, size=0xc00, will be mapped to vaddr=0x3c000000
+D (123) boot: mapped partition table 0x8000 at 0x3c008000
+D (128) flash_parts: partition table verified, 4 entries
+I (133) boot: Partition Table:
+I (135) boot: ## Label            Usage          Type ST Offset   Length
+D (142) boot: load partition table entry 0x3c008000
+D (146) boot: type=1 subtype=2
+I (149) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+D (156) boot: load partition table entry 0x3c008020
+D (160) boot: type=1 subtype=1
+I (163) boot:  1 phy_init         RF data          01 01 0000f000 00001000
+D (170) boot: load partition table entry 0x3c008040
+D (174) boot: type=0 subtype=0
+I (177) boot:  2 factory          factory app      00 00 00010000 00100000
+I (184) boot: End of partition table
+D (187) boot: Trying partition index -1 offs 0x10000 size 0x100000
+D (193) esp_image: reading image header @ 0x10000
+D (197) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+D (204) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+D (210) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+D (217) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+D (223) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+D (230) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+D (236) esp_image: image header: 0xe9 0x06 0x02 0x03 40375624
+D (242) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+D (248) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+I (255) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0aae4h ( 43748) map
+D (262) esp_image: free data page_count 0x00000200
+D (267) bootloader_flash: rodata starts from paddr=0x00010020, size=0xaae4, will be mapped to vaddr=0x3c000000
+D (286) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+D (286) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+I (290) esp_image: segment 1: paddr=0001ab0c vaddr=3fc90500 size=03868h ( 14440) load
+D (297) esp_image: free data page_count 0x00000200
+D (302) bootloader_flash: rodata starts from paddr=0x0001ab0c, size=0x3868, will be mapped to vaddr=0x3c000000
+D (315) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+D (318) bootloader_flash: mmu set block paddr=0x00010000 (was 0xffffffff)
+I (324) esp_image: segment 2: paddr=0001e37c vaddr=40374000 size=01c9ch (  7324) load
+D (332) esp_image: free data page_count 0x00000200
+D (337) bootloader_flash: rodata starts from paddr=0x0001e37c, size=0x1c9c, will be mapped to vaddr=0x3c000000
+D (348) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)
+D (353) bootloader_flash: mmu set block paddr=0x00020000 (was 0xffffffff)
+I (359) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=12294h ( 74388) map
+D (367) esp_image: free data page_count 0x00000200
+D (371) bootloader_flash: rodata starts from paddr=0x00020020, size=0x12294, will be mapped to vaddr=0x3c000000
+D (396) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (397) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+I (398) esp_image: segment 4: paddr=000322bc vaddr=40375c9c size=0a7d0h ( 42960) load
+D (406) esp_image: free data page_count 0x00000200
+D (410) bootloader_flash: rodata starts from paddr=0x000322bc, size=0xa7d0, will be mapped to vaddr=0x3c000000
+D (431) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (431) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+I (433) esp_image: segment 5: paddr=0003ca94 vaddr=50000000 size=00024h (    36) load
+D (441) esp_image: free data page_count 0x00000200
+D (445) bootloader_flash: rodata starts from paddr=0x0003ca94, size=0x24, will be mapped to vaddr=0x3c000000
+D (455) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (461) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (468) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (474) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (481) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (487) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (494) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (500) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (507) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (513) bootloader_flash: mmu set block paddr=0x00030000 (was 0xffffffff)
+D (520) boot: Calculated hash: 099206704cd2ae26bcf8854a5dbf33639596e4566b41fb6cec97be9df221f811
+I (534) boot: Loaded app from partition at offset 0x10000
+I (534) boot: Disabling RNG early entropy source...
+D (538) boot: Mapping segment 0 as DROM
+D (541) boot: Mapping segment 3 as IROM
+D (545) boot: calling set_cache_and_start_app
+D (549) boot: configure drom and irom and start
+D (554) boot: start: 0x40375624
+I (568) cpu_start: Multicore app
+D (568) cpu_start: Pro cpu up
+D (568) cpu_start: Starting app cpu, entry point is 0x403754e8
+D (0) cpu_start: App cpu up
+D (576) clk: RTC_SLOW_CLK calibration value: 3576704
+I (586) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+D (587) cpu_start: calling init function: 0x42001850 on core: 0
+D (587) cpu_start: calling init function: 0x42001f28 on core: 0
+I (592) cpu_start: Pro cpu start user code
+I (596) cpu_start: cpu freq: 160000000 Hz
+D (600) cpu_start: calling init function: 0x42001780 on core: 0
+I (606) app_init: Application information:
+I (609) app_init: Project name:     sqd_firmware
+I (614) app_init: App version:      fa27587
+I (618) app_init: Compile time:     Jul 18 2026 11:01:14
+I (623) app_init: ELF file SHA256:  63f46503f...
+I (627) app_init: ESP-IDF:          v6.0.2
+D (631) cpu_start: calling init function: 0x42001864 on core: 0
+I (637) efuse_init: Min chip rev:     v0.0
+I (640) efuse_init: Max chip rev:     v0.99
+I (644) efuse_init: Chip rev:         v0.2
+D (648) cpu_start: calling init function: 0x420036f8 on core: 0
+D (654) memory_layout: Checking 6 reserved memory ranges:
+D (659) memory_layout: Reserved memory range 0x3fc84000 - 0x3fc90500
+D (665) memory_layout: Reserved memory range 0x3fc90500 - 0x3fc94a10
+D (671) memory_layout: Reserved memory range 0x3fceee34 - 0x3fcf0000
+D (677) memory_layout: Reserved memory range 0x40374000 - 0x40380500
+D (683) memory_layout: Reserved memory range 0x600fe000 - 0x600fe000
+D (689) memory_layout: Reserved memory range 0x600fffe8 - 0x60100000
+D (695) memory_layout: Building list of available memory regions:
+D (701) memory_layout: Available memory region 0x3fc94a10 - 0x3fca0000
+D (707) memory_layout: Available memory region 0x3fca0000 - 0x3fcb0000
+D (714) memory_layout: Available memory region 0x3fcb0000 - 0x3fcc0000
+D (720) memory_layout: Available memory region 0x3fcc0000 - 0x3fcd0000
+D (726) memory_layout: Available memory region 0x3fcd0000 - 0x3fce0000
+D (732) memory_layout: Available memory region 0x3fce0000 - 0x3fce9710
+D (739) memory_layout: Available memory region 0x3fce9710 - 0x3fceee34
+D (745) memory_layout: Available memory region 0x3fcf0000 - 0x3fcf8000
+D (751) memory_layout: Available memory region 0x600fe000 - 0x600fffe8
+I (757) heap_init: Initializing. RAM available for dynamic allocation:
+D (764) heap_init: New heap initialised at 0x3fc94a10
+I (769) heap_init: At 3FC94A10 len 00054D00 (339 KiB): RAM
+I (774) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+D (779) heap_init: New heap initialised at 0x3fcf0000
+I (784) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+D (789) heap_init: New heap initialised at 0x600fe000
+I (794) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+D (799) cpu_start: calling init function: 0x420070c0 on core: 0
+D (805) cpu_start: calling init function: 0x420069a8 on core: 0
+D (810) cpu_start: calling init function: 0x42001f74 on core: 0
+D (816) intr_alloc: Connected src 39 to int 1 (cpu 0)
+D (821) cpu_start: calling init function: 0x42001f84 on core: 0
+D (826) cpu_start: calling init function: 0x42007a08 on core: 0
+D (832) cpu_start: calling init function: 0x4200816c on core: 0
+D (838) cpu_start: calling init function: 0x42008dd4 on core: 0
+D (843) cpu_start: calling init function: 0x420016d0 on core: 0
+D (849) cpu_start: calling init function: 0x420069b4 on core: 0
+D (855) cpu_start: calling init function: 0x42001b00 on core: 0
+D (860) spi_flash: trying chip: issi
+D (863) spi_flash: trying chip: gd
+D (867) spi_flash: trying chip: mxic
+D (870) spi_flash: trying chip: winbond
+D (873) spi_flash: trying chip: boya
+D (877) spi_flash: trying chip: th
+D (880) spi_flash: trying chip: mxic (opi)
+D (884) spi_flash: trying chip: generic
+I (887) spi_flash: detected chip: generic
+I (891) spi_flash: flash io: dio
+D (894) cpu_start: calling init function: 0x42001900 on core: 0
+D (900) cpu_start: calling init function: 0x4200e874 on core: 0
+D (905) cpu_start: calling init function: 0x4200c8ec on core: 0
+D (911) cpu_start: calling init function: 0x42004634 on core: 0
+I (916) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (923) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+D (929) cpu_start: calling init function: 0x42008de0 on core: 0
+I (935) esp_core_dump_uart: Init core dump to UART
+D (939) cpu_start: calling init function: 0x42001f90 on core: 0
+D (945) cpu_start: calling init function: 0x42007ae0 on core: 0
+D (951) cpu_start: calling init function: 0x42001f9c on core: 0
+D (957) intr_alloc: Connected src 79 to int 2 (cpu 0)
+D (961) app_start: Starting scheduler on CPU0
+D (965) intr_alloc: Connected src 57 to int 3 (cpu 0)
+D (965) intr_alloc: Connected src 80 to int 0 (cpu 1)
+D (965) app_start: Starting scheduler on CPU1
+D (975) intr_alloc: Connected src 58 to int 1 (cpu 1)
+I (965) main_task: Started on CPU0
+D (985) heap_init: New heap initialised at 0x3fce9710
+D (985) intr_alloc: Connected src 52 to int 5 (cpu 0)
+I (995) main_task: Calling app_main()
+I (995) B1.2: B1.2 minimal firmware started
+I (995) B1.2: ESP-IDF version: v6.0.2
+I (1005) B1.2: Configured target: esp32s3
+I (1005) B1.2: Heartbeat: 0
+I (2005) B1.2: Heartbeat: 1
+I (3005) B1.2: Heartbeat: 2
+I (4005) B1.2: Heartbeat: 3
+I (5005) B1.2: Heartbeat: 4
+I (6005) B1.2: Heartbeat: 5
+I (7005) B1.2: Heartbeat: 6
+I (8005) B1.2: Heartbeat: 7
+I (9005) B1.2: Heartbeat: 8
+I (10005) B1.2: Heartbeat: 9
+I (11005) B1.2: Heartbeat: 10
+I (12005) B1.2: Heartbeat: 11
+I (13005) B1.2: Heartbeat: 12
+I (14005) B1.2: Heartbeat: 13
+
+============================================================
+Capture ended:             2026-07-18T12:40:07.1940402+02:00
+Actual duration seconds:   15.052
+Heartbeat records:         14
+Status:                    PASS
+============================================================

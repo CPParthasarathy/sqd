@@ -1,0 +1,41 @@
+============================================================
+B3.2 CONSOLIDATED VERIFICATION
+============================================================
+Status:                    PASS
+Timestamp:                 2026-07-18T13:51:02.1742180+02:00
+Repository:                D:\OneDrive\SQD
+Branch:                    feat/b3.2-controlled-tooling
+Commit:                    fa275874dc36887e8f38f5ac470ae196564c3833
+ESP-IDF:                   ESP-IDF v6.0.2
+Target:                    esp32s3
+Hardware compatibility:    heltec-wifi-lora-32-v3
+Device required:            True
+Checks passed:             17
+Checks failed:             0
+Checks total:              17
+
+Verification checks
+-------------------
+[PASS] V01 Repository - Feature branch is correct
+[PASS] V02 Repository - Tracked repository tree is clean
+[PASS] V03 Toolchain - ESP-IDF version and target environment are controlled
+[PASS] V04 Tooling - All controlled tooling entry points exist
+[PASS] V05 Tooling - All controlled PowerShell scripts pass parser validation
+[PASS] V06 Configuration - Common and profile sdkconfig defaults are present
+[PASS] V07 Build - DEBUG controlled build and artifacts are valid
+[PASS] V08 Build - VALIDATION controlled build and artifacts are valid
+[PASS] V09 Build - PRODUCTION controlled build and artifacts are valid
+[PASS] V10 Flash - Debug controlled flash evidence is PASS
+[PASS] V11 Erase - Controlled flash erase evidence is PASS
+[PASS] V12 Monitor - Debug heartbeat monitor evidence is PASS
+[PASS] V13 Bootstrap - Controlled tooling bootstrap evidence is PASS
+[PASS] V14 Release - Production release archive and hash are valid
+[PASS] V15 Recovery - Dedicated destructive recovery test is PASS
+[PASS] V16 Hardware - Hardware identity, transport, and production boot checks are PASS
+[PASS] V17 Hardware - Unexercised board peripherals are explicitly recorded as NOT_TESTED
+
+Results CSV:               D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_verification_results_20260718_135051.csv
+Result JSON:               D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_verification_result_20260718_135051.json
+Verification manifest:     D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_verification_manifest_20260718_135051.json
+
+B3.2 CONSOLIDATED VERIFICATION PASS

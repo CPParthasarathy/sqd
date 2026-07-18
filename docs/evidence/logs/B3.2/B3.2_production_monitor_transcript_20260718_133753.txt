@@ -1,0 +1,40 @@
+============================================================
+B3.2 CONTROLLED SERIAL CAPTURE
+============================================================
+Started:                   2026-07-18T13:38:01.2432330+02:00
+Profile:                   production
+Branch:                    feat/b3.2-controlled-tooling
+Commit:                    fa275874dc36887e8f38f5ac470ae196564c3833
+ESP-IDF:                   ESP-IDF v6.0.2
+Target:                    esp32s3
+Hardware compatibility:    heltec-wifi-lora-32-v3
+Build directory:           D:\OneDrive\SQD\build\b3.2\production
+Serial port:               COM3
+Serial device:             Silicon Labs CP210x USB to UART Bridge (COM3)
+Baud:                      115200
+Capture duration seconds:  15
+Application ELF:           D:\OneDrive\SQD\build\b3.2\production\sqd_firmware.elf
+ELF SHA256:                B461E8A46218A098B2B2E3E16B64BD28F5F0873345DE61397E79BF54B456CA16
+============================================================
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0xcc4
+load:0x403c8700,len:0xb94
+load:0x403cb700,len:0x2cc4
+entry 0x403c8878
+
+============================================================
+Capture ended:             2026-07-18T13:38:16.6255506+02:00
+Actual duration seconds:   15.05
+Validation mode:           boot-sequence
+Captured characters:       230
+Heartbeat records:         0
+ROM banner detected:       True
+Reset reason detected:     True
+Entry point detected:      True
+Fatal markers:             0
+Status:                    PASS
+============================================================

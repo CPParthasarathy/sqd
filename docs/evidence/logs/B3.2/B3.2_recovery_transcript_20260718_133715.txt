@@ -1,0 +1,42 @@
+============================================================
+B3.2 DESTRUCTIVE RECOVERY TEST
+============================================================
+Started:                   2026-07-18T13:37:25.9940318+02:00
+Repository:                D:\OneDrive\SQD
+Branch:                    feat/b3.2-controlled-tooling
+Commit:                    fa275874dc36887e8f38f5ac470ae196564c3833
+ESP-IDF:                   ESP-IDF v6.0.2
+Target:                    esp32s3
+Hardware compatibility:    heltec-wifi-lora-32-v3
+Serial port:               COM3
+Serial device:             Silicon Labs CP210x USB to UART Bridge (COM3)
+Production binary:         D:\OneDrive\SQD\build\b3.2\production\sqd_firmware.bin
+Production binary SHA256:  445B662F8448CF2CC4E5BA82B8EA6DB6958D0709F9EC5E05447888FCAD6E2C6F
+
+STEP 1 START: ERASE FLASH - 2026-07-18T13:37:25.9940318+02:00
+STEP 1 PASS:  ERASE FLASH - 2026-07-18T13:37:35.7416892+02:00
+Evidence:     D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_erase_result_20260718_133725.json
+
+STEP 2 START: FLASH PRODUCTION - 2026-07-18T13:37:35.7416892+02:00
+STEP 2 PASS:  FLASH PRODUCTION - 2026-07-18T13:37:53.6566673+02:00
+Evidence:     D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_production_flash_result_20260718_133735.json
+SHA256:       445B662F8448CF2CC4E5BA82B8EA6DB6958D0709F9EC5E05447888FCAD6E2C6F
+
+STEP 3 START: VERIFY PRODUCTION BOOT - 2026-07-18T13:37:53.6571762+02:00
+STEP 3 PASS:  VERIFY PRODUCTION BOOT - 2026-07-18T13:38:16.6504357+02:00
+Evidence:     D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_production_monitor_result_20260718_133753.json
+Transcript:   D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_production_monitor_transcript_20260718_133753.txt
+ROM banner:   True
+Reset reason: True
+Entry point:  True
+Fatal markers:0
+
+============================================================
+B3.2 DESTRUCTIVE RECOVERY TEST PASSED
+============================================================
+Completed:                 2026-07-18T13:38:16.6525152+02:00
+Erase duration seconds:    9.744
+Flash duration seconds:    17.91
+Monitor duration seconds:  22.991
+Total duration seconds:    60.835
+Result JSON:               D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_recovery_result_20260718_133715.json

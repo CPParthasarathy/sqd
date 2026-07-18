@@ -1,0 +1,66 @@
+{
+    "work_package":  "B3.2",
+    "operation":  "destructive-recovery-test",
+    "status":  "PASS",
+    "timestamp_local":  "2026-07-18T13:38:16.6514598+02:00",
+    "authorization":  {
+                          "confirm_recovery":  true,
+                          "destructive_flash_erase":  true
+                      },
+    "repository":  {
+                       "root":  "D:\\OneDrive\\SQD",
+                       "branch":  "feat/b3.2-controlled-tooling",
+                       "commit":  "fa275874dc36887e8f38f5ac470ae196564c3833",
+                       "commit_short":  "fa275874dc36",
+                       "tracked_tree_clean":  true
+                   },
+    "toolchain":  {
+                      "idf_path":  "D:\\esp\\v6.0.2\\esp-idf",
+                      "idf_version":  "ESP-IDF v6.0.2",
+                      "target":  "esp32s3"
+                  },
+    "device":  {
+                   "port":  "COM3",
+                   "name":  "Silicon Labs CP210x USB to UART Bridge (COM3)",
+                   "description":  "Silicon Labs CP210x USB to UART Bridge",
+                   "pnp_device_id":  "USB\\VID_10C4\u0026PID_EA60\\0001",
+                   "flash_baud":  115200,
+                   "monitor_baud":  115200,
+                   "hardware_compatibility":  "heltec-wifi-lora-32-v3"
+               },
+    "production_image":  {
+                             "path":  "D:\\OneDrive\\SQD\\build\\b3.2\\production\\sqd_firmware.bin",
+                             "size_bytes":  124496,
+                             "sha256":  "445B662F8448CF2CC4E5BA82B8EA6DB6958D0709F9EC5E05447888FCAD6E2C6F"
+                         },
+    "stages":  {
+                   "erase":  {
+                                 "status":  "PASS",
+                                 "duration_seconds":  9.744,
+                                 "result_json":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_erase_result_20260718_133725.json"
+                             },
+                   "flash_production":  {
+                                            "status":  "PASS",
+                                            "duration_seconds":  17.91,
+                                            "result_json":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_flash_result_20260718_133735.json",
+                                            "image_sha256":  "445B662F8448CF2CC4E5BA82B8EA6DB6958D0709F9EC5E05447888FCAD6E2C6F"
+                                        },
+                   "verify_production_boot":  {
+                                                  "status":  "PASS",
+                                                  "duration_seconds":  22.991,
+                                                  "result_json":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_result_20260718_133753.json",
+                                                  "transcript":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_transcript_20260718_133753.txt",
+                                                  "validation_mode":  "boot-sequence",
+                                                  "rom_banner_detected":  true,
+                                                  "reset_reason_detected":  true,
+                                                  "entry_point_detected":  true,
+                                                  "fatal_markers":  0
+                                              }
+               },
+    "total_duration_seconds":  60.835,
+    "evidence":  {
+                     "summary":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_recovery_summary_20260718_133715.txt",
+                     "result_json":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_recovery_result_20260718_133715.json",
+                     "recovery_transcript":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_recovery_transcript_20260718_133715.txt"
+                 }
+}

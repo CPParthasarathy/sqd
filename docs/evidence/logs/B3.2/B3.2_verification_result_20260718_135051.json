@@ -1,0 +1,169 @@
+{
+    "work_package":  "B3.2",
+    "operation":  "consolidated-verification",
+    "status":  "PASS",
+    "timestamp_local":  "2026-07-18T13:51:02.1720994+02:00",
+    "repository":  {
+                       "root":  "D:\\OneDrive\\SQD",
+                       "branch":  "feat/b3.2-controlled-tooling",
+                       "commit":  "fa275874dc36887e8f38f5ac470ae196564c3833",
+                       "commit_short":  "fa275874dc36",
+                       "tracked_status":  ""
+                   },
+    "toolchain":  {
+                      "idf_path":  "D:\\esp\\v6.0.2\\esp-idf",
+                      "idf_version":  "ESP-IDF v6.0.2",
+                      "target":  "esp32s3"
+                  },
+    "hardware_compatibility":  "heltec-wifi-lora-32-v3",
+    "device_required":  true,
+    "totals":  {
+                   "pass":  17,
+                   "fail":  0,
+                   "total":  17
+               },
+    "checks":  [
+                   {
+                       "Id":  "V01",
+                       "Category":  "Repository",
+                       "Description":  "Feature branch is correct",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD",
+                       "Details":  "Branch=feat/b3.2-controlled-tooling"
+                   },
+                   {
+                       "Id":  "V02",
+                       "Category":  "Repository",
+                       "Description":  "Tracked repository tree is clean",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD",
+                       "Details":  "Tracked files clean; untracked B3.2 deliverables are permitted before commit."
+                   },
+                   {
+                       "Id":  "V03",
+                       "Category":  "Toolchain",
+                       "Description":  "ESP-IDF version and target environment are controlled",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\esp\\v6.0.2\\esp-idf",
+                       "Details":  "Version=ESP-IDF v6.0.2; Target=esp32s3"
+                   },
+                   {
+                       "Id":  "V04",
+                       "Category":  "Tooling",
+                       "Description":  "All controlled tooling entry points exist",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Common.ps1; D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Build.ps1; D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Flash.ps1; D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Monitor.ps1; D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Erase.ps1; D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Bootstrap.ps1; D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Release.ps1; D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Recovery.ps1; D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_HardwareCheck.ps1; D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Verify.ps1",
+                       "Details":  "Count=10"
+                   },
+                   {
+                       "Id":  "V05",
+                       "Category":  "Tooling",
+                       "Description":  "All controlled PowerShell scripts pass parser validation",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\tools\\scripts",
+                       "Details":  "Scripts parsed=10"
+                   },
+                   {
+                       "Id":  "V06",
+                       "Category":  "Configuration",
+                       "Description":  "Common and profile sdkconfig defaults are present",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\sdkconfig.defaults; D:\\OneDrive\\SQD\\sdkconfig.defaults.debug; D:\\OneDrive\\SQD\\sdkconfig.defaults.validation; D:\\OneDrive\\SQD\\sdkconfig.defaults.production",
+                       "Details":  "Profiles=debug,validation,production"
+                   },
+                   {
+                       "Id":  "V07",
+                       "Category":  "Build",
+                       "Description":  "DEBUG controlled build and artifacts are valid",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_debug_build_result_20260718_105950.json",
+                       "Details":  "Artifacts=5; BuildDir=D:\\OneDrive\\SQD\\build\\b3.2\\debug"
+                   },
+                   {
+                       "Id":  "V08",
+                       "Category":  "Build",
+                       "Description":  "VALIDATION controlled build and artifacts are valid",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_build_result_20260718_110446.json",
+                       "Details":  "Artifacts=5; BuildDir=D:\\OneDrive\\SQD\\build\\b3.2\\validation"
+                   },
+                   {
+                       "Id":  "V09",
+                       "Category":  "Build",
+                       "Description":  "PRODUCTION controlled build and artifacts are valid",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_build_result_20260718_111726.json",
+                       "Details":  "Artifacts=5; BuildDir=D:\\OneDrive\\SQD\\build\\b3.2\\production"
+                   },
+                   {
+                       "Id":  "V10",
+                       "Category":  "Flash",
+                       "Description":  "Debug controlled flash evidence is PASS",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_debug_flash_result_20260718_120605.json",
+                       "Details":  ""
+                   },
+                   {
+                       "Id":  "V11",
+                       "Category":  "Erase",
+                       "Description":  "Controlled flash erase evidence is PASS",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_erase_result_20260718_133725.json",
+                       "Details":  ""
+                   },
+                   {
+                       "Id":  "V12",
+                       "Category":  "Monitor",
+                       "Description":  "Debug heartbeat monitor evidence is PASS",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_debug_monitor_result_20260718_123938.json",
+                       "Details":  "Heartbeats=14"
+                   },
+                   {
+                       "Id":  "V13",
+                       "Category":  "Bootstrap",
+                       "Description":  "Controlled tooling bootstrap evidence is PASS",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_bootstrap_result_20260718_125423.json",
+                       "Details":  ""
+                   },
+                   {
+                       "Id":  "V14",
+                       "Category":  "Release",
+                       "Description":  "Production release archive and hash are valid",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020.zip",
+                       "Details":  "Size=1578987; SHA256=B57773A3F613935CA5E6840D34AEB8F1E938BFC95ED700686AC0B882CC7121C2"
+                   },
+                   {
+                       "Id":  "V15",
+                       "Category":  "Recovery",
+                       "Description":  "Dedicated destructive recovery test is PASS",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_recovery_result_20260718_133715.json",
+                       "Details":  "Erase=PASS; Flash=PASS; Boot=PASS; SHA256=445B662F8448CF2CC4E5BA82B8EA6DB6958D0709F9EC5E05447888FCAD6E2C6F; FatalMarkers=0"
+                   },
+                   {
+                       "Id":  "V16",
+                       "Category":  "Hardware",
+                       "Description":  "Hardware identity, transport, and production boot checks are PASS",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_identity_result_20260718_134518.json",
+                       "Details":  "MCU=ESP32-S3; Flash=8MB; Crystal=40MHz; IdentityChecks=8 PASS; Fail=0"
+                   },
+                   {
+                       "Id":  "V17",
+                       "Category":  "Hardware",
+                       "Description":  "Unexercised board peripherals are explicitly recorded as NOT_TESTED",
+                       "Status":  "PASS",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_identity_result_20260718_134518.json",
+                       "Details":  "H09-H15=NOT_TESTED; dedicated peripheral self-test firmware still required"
+                   }
+               ],
+    "evidence":  {
+                     "summary":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_verification_summary_20260718_135051.txt",
+                     "result_json":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_verification_result_20260718_135051.json",
+                     "results_csv":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_verification_results_20260718_135051.csv",
+                     "verification_manifest":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_verification_manifest_20260718_135051.json"
+                 }
+}

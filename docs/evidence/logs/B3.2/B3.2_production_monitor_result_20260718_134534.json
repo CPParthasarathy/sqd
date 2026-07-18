@@ -1,0 +1,45 @@
+{
+    "work_package":  "B3.2",
+    "operation":  "controlled-monitor",
+    "status":  "PASS",
+    "timestamp_local":  "2026-07-18T13:45:49.1548091+02:00",
+    "profile":  "production",
+    "repository":  {
+                       "root":  "D:\\OneDrive\\SQD",
+                       "branch":  "feat/b3.2-controlled-tooling",
+                       "commit":  "fa275874dc36887e8f38f5ac470ae196564c3833",
+                       "commit_short":  "fa275874dc36",
+                       "tracked_tree_clean":  true
+                   },
+    "toolchain":  {
+                      "idf_path":  "D:\\esp\\v6.0.2\\esp-idf",
+                      "idf_version":  "ESP-IDF v6.0.2",
+                      "target":  "esp32s3"
+                  },
+    "device":  {
+                   "port":  "COM3",
+                   "name":  "Silicon Labs CP210x USB to UART Bridge (COM3)",
+                   "description":  "Silicon Labs CP210x USB to UART Bridge",
+                   "pnp_device_id":  "USB\\VID_10C4\u0026PID_EA60\\0001",
+                   "baud":  115200,
+                   "hardware_compatibility":  "heltec-wifi-lora-32-v3"
+               },
+    "build":  {
+                  "directory":  "D:\\OneDrive\\SQD\\build\\b3.2\\production",
+                  "generated_sdkconfig":  "D:\\OneDrive\\SQD\\build\\b3.2\\production\\sdkconfig",
+                  "application_elf":  "D:\\OneDrive\\SQD\\build\\b3.2\\production\\sqd_firmware.elf",
+                  "application_elf_sha256":  "B461E8A46218A098B2B2E3E16B64BD28F5F0873345DE61397E79BF54B456CA16"
+              },
+    "monitor":  {
+                    "validation_mode":  "boot-sequence",
+                    "requested_duration_seconds":  10,
+                    "actual_duration_seconds":  10.05,
+                    "captured_characters":  230,
+                    "heartbeat_records":  0,
+                    "rom_banner_detected":  true,
+                    "reset_reason_detected":  true,
+                    "entry_point_detected":  true,
+                    "fatal_markers":  0,
+                    "transcript":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_transcript_20260718_134534.txt"
+                }
+}

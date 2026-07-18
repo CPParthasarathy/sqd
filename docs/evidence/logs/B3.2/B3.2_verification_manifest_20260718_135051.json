@@ -1,0 +1,506 @@
+[
+    {
+        "Role":  "debug-flash-0x0",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\debug\\bootloader\\bootloader.bin",
+        "RelativePath":  "build\\b3.2\\debug\\bootloader\\bootloader.bin",
+        "SizeBytes":  27504,
+        "SHA256":  "022D36D2AB899F85E8EC19F8A0F25B8156A7A9715602EC0400374C668E4C1C0B",
+        "LastWriteTimeUtc":  "2026-07-18T09:01:47.2535015Z"
+    },
+    {
+        "Role":  "debug-flash-0x8000",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\debug\\partition_table\\partition-table.bin",
+        "RelativePath":  "build\\b3.2\\debug\\partition_table\\partition-table.bin",
+        "SizeBytes":  3072,
+        "SHA256":  "7F00B6C042A89B15B0CAC534F82ED988CAF29278FF5700B0C511EB1B5BB7C820",
+        "LastWriteTimeUtc":  "2026-07-18T09:00:32.6115359Z"
+    },
+    {
+        "Role":  "debug-application-bin",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\debug\\sqd_firmware.bin",
+        "RelativePath":  "build\\b3.2\\debug\\sqd_firmware.bin",
+        "SizeBytes":  183008,
+        "SHA256":  "4F6FF8729045A8A7B66FBF3D35584BC72786D8DC87BDA9E650EC01D4FDC47228",
+        "LastWriteTimeUtc":  "2026-07-18T09:02:07.2981903Z"
+    },
+    {
+        "Role":  "debug-application-elf",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\debug\\sqd_firmware.elf",
+        "RelativePath":  "build\\b3.2\\debug\\sqd_firmware.elf",
+        "SizeBytes":  3765988,
+        "SHA256":  "63F46503FBC3F84964B91AF4490ECDC3FAA4039142C29B09E43AC0E6D41E6B84",
+        "LastWriteTimeUtc":  "2026-07-18T09:02:06.9640527Z"
+    },
+    {
+        "Role":  "debug-linker-map",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\debug\\sqd_firmware.map",
+        "RelativePath":  "build\\b3.2\\debug\\sqd_firmware.map",
+        "SizeBytes":  3763013,
+        "SHA256":  "1DFBE25E36461023FD4E6618A8894F0267468ADD41262D526A7B4207151C4F5D",
+        "LastWriteTimeUtc":  "2026-07-18T09:02:06.9735679Z"
+    },
+    {
+        "Role":  "production-flash-0x0",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\production\\bootloader\\bootloader.bin",
+        "RelativePath":  "build\\b3.2\\production\\bootloader\\bootloader.bin",
+        "SizeBytes":  17776,
+        "SHA256":  "6B4223FEB2944153153E0DE371B2D94DEA9837185F88C4DBB4281516C64C429B",
+        "LastWriteTimeUtc":  "2026-07-18T09:25:48.4643234Z"
+    },
+    {
+        "Role":  "production-flash-0x8000",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\production\\partition_table\\partition-table.bin",
+        "RelativePath":  "build\\b3.2\\production\\partition_table\\partition-table.bin",
+        "SizeBytes":  3072,
+        "SHA256":  "7F00B6C042A89B15B0CAC534F82ED988CAF29278FF5700B0C511EB1B5BB7C820",
+        "LastWriteTimeUtc":  "2026-07-18T09:18:41.3963836Z"
+    },
+    {
+        "Role":  "production-application-bin",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\production\\sqd_firmware.bin",
+        "RelativePath":  "build\\b3.2\\production\\sqd_firmware.bin",
+        "SizeBytes":  124496,
+        "SHA256":  "445B662F8448CF2CC4E5BA82B8EA6DB6958D0709F9EC5E05447888FCAD6E2C6F",
+        "LastWriteTimeUtc":  "2026-07-18T09:26:04.9208926Z"
+    },
+    {
+        "Role":  "production-application-elf",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\production\\sqd_firmware.elf",
+        "RelativePath":  "build\\b3.2\\production\\sqd_firmware.elf",
+        "SizeBytes":  3464196,
+        "SHA256":  "B461E8A46218A098B2B2E3E16B64BD28F5F0873345DE61397E79BF54B456CA16",
+        "LastWriteTimeUtc":  "2026-07-18T09:26:04.5888181Z"
+    },
+    {
+        "Role":  "production-linker-map",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\production\\sqd_firmware.map",
+        "RelativePath":  "build\\b3.2\\production\\sqd_firmware.map",
+        "SizeBytes":  3397034,
+        "SHA256":  "1AE23E22F238C93A47472FD917B7FBE80FC5ED53200759519C30466F7FEB6FBE",
+        "LastWriteTimeUtc":  "2026-07-18T09:26:04.5995240Z"
+    },
+    {
+        "Role":  "validation-flash-0x0",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\bootloader\\bootloader.bin",
+        "RelativePath":  "build\\b3.2\\validation\\bootloader\\bootloader.bin",
+        "SizeBytes":  21056,
+        "SHA256":  "10CCB821CB89ED7396A20BBD2057945AC6A828635BA4DF43F0B1D424BF4BC8E1",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:19.6560437Z"
+    },
+    {
+        "Role":  "validation-flash-0x8000",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\partition_table\\partition-table.bin",
+        "RelativePath":  "build\\b3.2\\validation\\partition_table\\partition-table.bin",
+        "SizeBytes":  3072,
+        "SHA256":  "7F00B6C042A89B15B0CAC534F82ED988CAF29278FF5700B0C511EB1B5BB7C820",
+        "LastWriteTimeUtc":  "2026-07-18T09:05:31.4776993Z"
+    },
+    {
+        "Role":  "validation-application-bin",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\sqd_firmware.bin",
+        "RelativePath":  "build\\b3.2\\validation\\sqd_firmware.bin",
+        "SizeBytes":  160352,
+        "SHA256":  "FD185F205942693061728946D16155F1150D198625EE9085CE9C94DC2A9BEB4C",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:36.4747749Z"
+    },
+    {
+        "Role":  "validation-application-elf",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\sqd_firmware.elf",
+        "RelativePath":  "build\\b3.2\\validation\\sqd_firmware.elf",
+        "SizeBytes":  3709744,
+        "SHA256":  "55829D2ABDA4C5FCF60A1450DE4520EBD591D4024E4A794176F852D83D40A3AA",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:36.0374997Z"
+    },
+    {
+        "Role":  "validation-linker-map",
+        "Path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\sqd_firmware.map",
+        "RelativePath":  "build\\b3.2\\validation\\sqd_firmware.map",
+        "SizeBytes":  3580245,
+        "SHA256":  "F451CD79B4A49138649617523F6CBF84BC3C8B9039AD4A06A55EB34E638AC0A8",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:36.0518572Z"
+    },
+    {
+        "Role":  "bootstrap-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_bootstrap_result_20260718_125423.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_bootstrap_result_20260718_125423.json",
+        "SizeBytes":  3537,
+        "SHA256":  "09487203015E999EA6C45BD73F9F903E4AE502C5E1BD1D89A377AD4F3ED7217F",
+        "LastWriteTimeUtc":  "2026-07-18T10:54:33.7015906Z"
+    },
+    {
+        "Role":  "debug-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_debug_artifact_manifest_20260718_105950.csv",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_debug_artifact_manifest_20260718_105950.csv",
+        "SizeBytes":  1387,
+        "SHA256":  "92BA5E4E9B29D67099DDC4C8AF588CBF32F38B79BC3D471C14E975C6C23C58EC",
+        "LastWriteTimeUtc":  "2026-07-18T09:02:15.4030560Z"
+    },
+    {
+        "Role":  "debug-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_debug_artifact_manifest_20260718_105950.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_debug_artifact_manifest_20260718_105950.json",
+        "SizeBytes":  2288,
+        "SHA256":  "57B19DF1A47D7424B558A95D7588499C7563AF49B91DEEE23384CC13CBBA5A66",
+        "LastWriteTimeUtc":  "2026-07-18T09:02:15.4180692Z"
+    },
+    {
+        "Role":  "debug-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_debug_build_result_20260718_105950.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_debug_build_result_20260718_105950.json",
+        "SizeBytes":  3118,
+        "SHA256":  "273028A14DBA4E9C8E48FEE92B563663692FA66996F405365063B7D81E67AB83",
+        "LastWriteTimeUtc":  "2026-07-18T09:02:15.4462626Z"
+    },
+    {
+        "Role":  "debug-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_debug_build_summary_20260718_105950.txt",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_debug_build_summary_20260718_105950.txt",
+        "SizeBytes":  1707,
+        "SHA256":  "9BA75B5AE0DF17646135D855CCD06EAF1BDD8AE333A5B062C4344EFD6DCD2D48",
+        "LastWriteTimeUtc":  "2026-07-18T09:02:15.4624964Z"
+    },
+    {
+        "Role":  "debug-flash-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_debug_flash_result_20260718_120605.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_debug_flash_result_20260718_120605.json",
+        "SizeBytes":  2323,
+        "SHA256":  "434FAE2BAD9FAD8B79D801693D593E9464437A750873EB50665D55D8B853243D",
+        "LastWriteTimeUtc":  "2026-07-18T10:06:26.7120451Z"
+    },
+    {
+        "Role":  "debug-monitor-result",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_debug_monitor_result_20260718_123938.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_debug_monitor_result_20260718_123938.json",
+        "SizeBytes":  1912,
+        "SHA256":  "1F7009FB69A6C21E92EDB852076EE6486F840688437F19E2D2B97A5A2252462D",
+        "LastWriteTimeUtc":  "2026-07-18T10:40:07.1996501Z"
+    },
+    {
+        "Role":  "debug-monitor-transcript",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_debug_monitor_transcript_20260718_123938.txt",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_debug_monitor_transcript_20260718_123938.txt",
+        "SizeBytes":  13370,
+        "SHA256":  "9E13AB44C39A6FD58FA3CD63465C8B4F4134E8A329AEBEC174DB134F8B8397CB",
+        "LastWriteTimeUtc":  "2026-07-18T10:40:07.1951278Z"
+    },
+    {
+        "Role":  "erase-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_erase_result_20260718_133725.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_erase_result_20260718_133725.json",
+        "SizeBytes":  1689,
+        "SHA256":  "1DC080C0491D19AE72F200F8629FA8C59AFD0D7EDF39CCF0ECF977368BB3D364",
+        "LastWriteTimeUtc":  "2026-07-18T11:37:35.7273440Z"
+    },
+    {
+        "Role":  "hardware-identity-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_chip_id_stdout_20260718_134518.txt",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_hardware_chip_id_stdout_20260718_134518.txt",
+        "SizeBytes":  511,
+        "SHA256":  "25DAEF8643D3E44D17270620A6060E69615621315E23FD6E7BC0E7181EECD500",
+        "LastWriteTimeUtc":  "2026-07-18T11:45:30.7762453Z"
+    },
+    {
+        "Role":  "hardware-identity-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_flash_id_stdout_20260718_134518.txt",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_hardware_flash_id_stdout_20260718_134518.txt",
+        "SizeBytes":  600,
+        "SHA256":  "C7A9E6F54CB609B61DB4DF7A3A6B51F5632825F9BB77B68A03B5AD0415A09774",
+        "LastWriteTimeUtc":  "2026-07-18T11:45:33.2863006Z"
+    },
+    {
+        "Role":  "hardware-identity-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_identity_result_20260718_134518.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_hardware_identity_result_20260718_134518.json",
+        "SizeBytes":  9604,
+        "SHA256":  "E8EB02D6E2F385BD9F562B2D5900FE292FF6B4270FF2E4AB87716778A264CA6F",
+        "LastWriteTimeUtc":  "2026-07-18T11:45:49.1816797Z"
+    },
+    {
+        "Role":  "hardware-identity-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_identity_results_20260718_134518.csv",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_hardware_identity_results_20260718_134518.csv",
+        "SizeBytes":  2458,
+        "SHA256":  "588A725810BE8B59B8DA15C6C5567A53C2E812AD0273D66E1D63CFFF8C838645",
+        "LastWriteTimeUtc":  "2026-07-18T11:45:49.1796800Z"
+    },
+    {
+        "Role":  "production-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_artifact_manifest_20260718_111726.csv",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_production_artifact_manifest_20260718_111726.csv",
+        "SizeBytes":  1447,
+        "SHA256":  "FB0F50054FFA26D12E6C988CAB831C7AA00EA9A1D4C4937857F9632B9BED4F79",
+        "LastWriteTimeUtc":  "2026-07-18T09:26:15.7787209Z"
+    },
+    {
+        "Role":  "production-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_artifact_manifest_20260718_111726.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_production_artifact_manifest_20260718_111726.json",
+        "SizeBytes":  2348,
+        "SHA256":  "AAD7880F446D260C8F5918416D3326F2FC00EE12B7CD7C5A8B7E54A40A7463A1",
+        "LastWriteTimeUtc":  "2026-07-18T09:26:15.7806437Z"
+    },
+    {
+        "Role":  "production-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_build_result_20260718_111726.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_production_build_result_20260718_111726.json",
+        "SizeBytes":  3183,
+        "SHA256":  "55693C42609651CB1AE00584C7BD5036492ED647290F7C67CCAAF25FEA65360A",
+        "LastWriteTimeUtc":  "2026-07-18T09:26:15.7846403Z"
+    },
+    {
+        "Role":  "production-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_build_summary_20260718_111726.txt",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_production_build_summary_20260718_111726.txt",
+        "SizeBytes":  1752,
+        "SHA256":  "71FB21B319DF225BAC5CBFD0B0BE1FCDCD28A4F717A1D24243155530FF316DFE",
+        "LastWriteTimeUtc":  "2026-07-18T09:26:15.7871838Z"
+    },
+    {
+        "Role":  "dedicated-recovery-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_flash_result_20260718_133735.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_production_flash_result_20260718_133735.json",
+        "SizeBytes":  2364,
+        "SHA256":  "E9A4711189C84C344D698686428125B638ADBD59A07ADC74B2E46D9B984AD104",
+        "LastWriteTimeUtc":  "2026-07-18T11:37:53.6402638Z"
+    },
+    {
+        "Role":  "dedicated-recovery-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_result_20260718_133753.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_result_20260718_133753.json",
+        "SizeBytes":  2241,
+        "SHA256":  "2B22F52DE29FC37822D322A3A9B48832933B212CF8A902312B399A3AD9DA3C42",
+        "LastWriteTimeUtc":  "2026-07-18T11:38:16.6311721Z"
+    },
+    {
+        "Role":  "hardware-identity-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_result_20260718_134534.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_result_20260718_134534.json",
+        "SizeBytes":  2241,
+        "SHA256":  "378E5A383B83AB4EEDD78006A5F6F1857B32E354249EC5EBEC61570D5C5E3E19",
+        "LastWriteTimeUtc":  "2026-07-18T11:45:49.1568088Z"
+    },
+    {
+        "Role":  "dedicated-recovery-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_transcript_20260718_133753.txt",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_transcript_20260718_133753.txt",
+        "SizeBytes":  1708,
+        "SHA256":  "B0BF76CD2F21FA2F82BEE7B05D7C9A4BC99B38A13916F6E8A9171EB9EFC1E3B1",
+        "LastWriteTimeUtc":  "2026-07-18T11:38:16.6281791Z"
+    },
+    {
+        "Role":  "hardware-identity-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_transcript_20260718_134534.txt",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_transcript_20260718_134534.txt",
+        "SizeBytes":  1708,
+        "SHA256":  "F2C1037FE72015C9EB6FD523708CDEB3724FC4E1B457DBC52306D3633146D175",
+        "LastWriteTimeUtc":  "2026-07-18T11:45:49.1538100Z"
+    },
+    {
+        "Role":  "production-release-result",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_release_result_20260718_130020.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_production_release_result_20260718_130020.json",
+        "SizeBytes":  2643,
+        "SHA256":  "ED1FE9E17B14FFB73C92387EB8B435A513B9C5CB34486B52B067C00DD995CD12",
+        "LastWriteTimeUtc":  "2026-07-18T11:00:31.8335979Z"
+    },
+    {
+        "Role":  "dedicated-recovery-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_recovery_result_20260718_133715.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_recovery_result_20260718_133715.json",
+        "SizeBytes":  4020,
+        "SHA256":  "C81DBFEE5B4AF36273B06F1A7C99CB4F15F032A9AD65CE8DC96C5E955DE763CD",
+        "LastWriteTimeUtc":  "2026-07-18T11:38:16.6525152Z"
+    },
+    {
+        "Role":  "dedicated-recovery-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_recovery_transcript_20260718_133715.txt",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_recovery_transcript_20260718_133715.txt",
+        "SizeBytes":  2267,
+        "SHA256":  "137D23368548CA10D9A3B717C28A637EEEEFA7A4DC4001321000B92BE999BFB5",
+        "LastWriteTimeUtc":  "2026-07-18T11:38:16.6576288Z"
+    },
+    {
+        "Role":  "validation-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_artifact_manifest_20260718_110446.csv",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_validation_artifact_manifest_20260718_110446.csv",
+        "SizeBytes":  1447,
+        "SHA256":  "A4EB55601B9444667B06192E78B980211CADCE0BF51722FB17AA287CE7AFD910",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:47.2511011Z"
+    },
+    {
+        "Role":  "validation-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_artifact_manifest_20260718_110446.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_validation_artifact_manifest_20260718_110446.json",
+        "SizeBytes":  2348,
+        "SHA256":  "5248F0A5F14248BB94662922F1B69A812A857CBDE07D16C11E95C58BADC85BC6",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:47.2537477Z"
+    },
+    {
+        "Role":  "validation-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_build_result_20260718_110446.json",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_validation_build_result_20260718_110446.json",
+        "SizeBytes":  3183,
+        "SHA256":  "84DB602822861CBE85035D66167ACD83B44C7BE8AA88988D27DFC84E410E4584",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:47.2567475Z"
+    },
+    {
+        "Role":  "validation-build-evidence",
+        "Path":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_build_summary_20260718_110446.txt",
+        "RelativePath":  "docs\\evidence\\logs\\B3.2\\B3.2_validation_build_summary_20260718_110446.txt",
+        "SizeBytes":  1752,
+        "SHA256":  "8A99843949C2AD6F78B5F0240B8815D20098A70AF2D21D03C7E72AE1E5B5AE8A",
+        "LastWriteTimeUtc":  "2026-07-18T09:12:47.2592485Z"
+    },
+    {
+        "Role":  "production-release-archive",
+        "Path":  "D:\\OneDrive\\SQD\\release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020.zip",
+        "RelativePath":  "release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020.zip",
+        "SizeBytes":  1578987,
+        "SHA256":  "B57773A3F613935CA5E6840D34AEB8F1E938BFC95ED700686AC0B882CC7121C2",
+        "LastWriteTimeUtc":  "2026-07-18T11:00:31.8121813Z"
+    },
+    {
+        "Role":  "release-package-metadata",
+        "Path":  "D:\\OneDrive\\SQD\\release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020\\manifest.csv",
+        "RelativePath":  "release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020\\manifest.csv",
+        "SizeBytes":  1641,
+        "SHA256":  "45A2E944393B07E014C4098D25AD2E52057372DB2C51CD6AD503353887518969",
+        "LastWriteTimeUtc":  "2026-07-18T11:00:30.9798518Z"
+    },
+    {
+        "Role":  "release-package-metadata",
+        "Path":  "D:\\OneDrive\\SQD\\release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020\\manifest.json",
+        "RelativePath":  "release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020\\manifest.json",
+        "SizeBytes":  2900,
+        "SHA256":  "F5CEB1098C5A62E6695EAA9BC713159BC96D4AE72F160EAF6C0FCE0CF7942666",
+        "LastWriteTimeUtc":  "2026-07-18T11:00:30.9813626Z"
+    },
+    {
+        "Role":  "release-package-metadata",
+        "Path":  "D:\\OneDrive\\SQD\\release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020\\README.txt",
+        "RelativePath":  "release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020\\README.txt",
+        "SizeBytes":  910,
+        "SHA256":  "96DE6AF9ECC70BF23903564E9D448ABB0B44BB3BA4E6A6B9B2486694D50AAEAF",
+        "LastWriteTimeUtc":  "2026-07-18T11:00:30.9863729Z"
+    },
+    {
+        "Role":  "release-package-metadata",
+        "Path":  "D:\\OneDrive\\SQD\\release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020\\release_metadata.json",
+        "RelativePath":  "release\\b3.2\\sqd_firmware_production_fa275874dc36_20260718_130020\\release_metadata.json",
+        "SizeBytes":  1572,
+        "SHA256":  "3F56B4B46FD413FE6646A8BE6A3B2ADC8CD768BD2E6DE7A3A424E20ACD4DCA41",
+        "LastWriteTimeUtc":  "2026-07-18T11:00:30.9843828Z"
+    },
+    {
+        "Role":  "sdkconfig-defaults",
+        "Path":  "D:\\OneDrive\\SQD\\sdkconfig.defaults",
+        "RelativePath":  "sdkconfig.defaults",
+        "SizeBytes":  200,
+        "SHA256":  "B1013FE2B7BCAFF26992C85EE2AE7E28C170FA1684BBF51F9B339ADD41D02960",
+        "LastWriteTimeUtc":  "2026-07-17T14:47:30.7683735Z"
+    },
+    {
+        "Role":  "sdkconfig-defaults",
+        "Path":  "D:\\OneDrive\\SQD\\sdkconfig.defaults.debug",
+        "RelativePath":  "sdkconfig.defaults.debug",
+        "SizeBytes":  529,
+        "SHA256":  "D07D00CCC88F266B210DA72DFBAD7315C5E0AFE3A4F5E6088717A528D4402A5B",
+        "LastWriteTimeUtc":  "2026-07-17T14:47:30.7743680Z"
+    },
+    {
+        "Role":  "sdkconfig-defaults",
+        "Path":  "D:\\OneDrive\\SQD\\sdkconfig.defaults.production",
+        "RelativePath":  "sdkconfig.defaults.production",
+        "SizeBytes":  589,
+        "SHA256":  "0F98F4CCF619EAA5510D5DCF197DB6DC7685AC127A5D32074B7294EE947A5537",
+        "LastWriteTimeUtc":  "2026-07-17T14:47:30.7743680Z"
+    },
+    {
+        "Role":  "sdkconfig-defaults",
+        "Path":  "D:\\OneDrive\\SQD\\sdkconfig.defaults.validation",
+        "RelativePath":  "sdkconfig.defaults.validation",
+        "SizeBytes":  536,
+        "SHA256":  "6E8D1BA02ECED7D94DB846A221F1ABF4A87F90723FD8A6239492E3BF6B80504E",
+        "LastWriteTimeUtc":  "2026-07-17T14:47:30.7743680Z"
+    },
+    {
+        "Role":  "controlled-script-B3.2_Bootstrap.ps1",
+        "Path":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Bootstrap.ps1",
+        "RelativePath":  "tools\\scripts\\B3.2_Bootstrap.ps1",
+        "SizeBytes":  9607,
+        "SHA256":  "606691578D239992E47B76EAA398F004E4E5A8020F21152B529BD00EE9E2CD12",
+        "LastWriteTimeUtc":  "2026-07-18T10:51:04.9849140Z"
+    },
+    {
+        "Role":  "controlled-script-B3.2_Build.ps1",
+        "Path":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Build.ps1",
+        "RelativePath":  "tools\\scripts\\B3.2_Build.ps1",
+        "SizeBytes":  10939,
+        "SHA256":  "4710D7C4325ACA3D64CF135161AAD60601F67C9AD94004E05C0D4D12BB9244B7",
+        "LastWriteTimeUtc":  "2026-07-18T08:01:16.7032492Z"
+    },
+    {
+        "Role":  "controlled-script-B3.2_Common.ps1",
+        "Path":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Common.ps1",
+        "RelativePath":  "tools\\scripts\\B3.2_Common.ps1",
+        "SizeBytes":  23536,
+        "SHA256":  "98DC6676BD5E65A8827683799A0241985CDDA037CA37B792FD172556CE6120D6",
+        "LastWriteTimeUtc":  "2026-07-18T11:33:44.2901494Z"
+    },
+    {
+        "Role":  "controlled-script-B3.2_Erase.ps1",
+        "Path":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Erase.ps1",
+        "RelativePath":  "tools\\scripts\\B3.2_Erase.ps1",
+        "SizeBytes":  5786,
+        "SHA256":  "2BBD3BF42F06516731E21F63332A0C8A95444FD9683FBD4D7A273CE2DFDE4C1E",
+        "LastWriteTimeUtc":  "2026-07-18T10:47:05.0934356Z"
+    },
+    {
+        "Role":  "controlled-script-B3.2_Flash.ps1",
+        "Path":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Flash.ps1",
+        "RelativePath":  "tools\\scripts\\B3.2_Flash.ps1",
+        "SizeBytes":  7936,
+        "SHA256":  "8FF729B0E6B1052E0C045F83F8DDBC748A396151B00EE51480CFFDC47BB05A59",
+        "LastWriteTimeUtc":  "2026-07-18T09:41:39.5610133Z"
+    },
+    {
+        "Role":  "controlled-script-B3.2_HardwareCheck.ps1",
+        "Path":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_HardwareCheck.ps1",
+        "RelativePath":  "tools\\scripts\\B3.2_HardwareCheck.ps1",
+        "SizeBytes":  18139,
+        "SHA256":  "B07B2D20957550B56C1F70BFA5AD2C2B2AA7F28D86D1FD5FE2547B6DB8865EE0",
+        "LastWriteTimeUtc":  "2026-07-18T11:44:27.5302135Z"
+    },
+    {
+        "Role":  "controlled-script-B3.2_Monitor.ps1",
+        "Path":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Monitor.ps1",
+        "RelativePath":  "tools\\scripts\\B3.2_Monitor.ps1",
+        "SizeBytes":  13665,
+        "SHA256":  "ACC568BDC274D93543FEC5ECB81B8DE3F920166A387FBD7A474365AA9BCCFC27",
+        "LastWriteTimeUtc":  "2026-07-18T11:04:54.8168272Z"
+    },
+    {
+        "Role":  "controlled-script-B3.2_Recovery.ps1",
+        "Path":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Recovery.ps1",
+        "RelativePath":  "tools\\scripts\\B3.2_Recovery.ps1",
+        "SizeBytes":  18982,
+        "SHA256":  "4D8949A75F2F6F5C9C1281219EF2FFBF0ED32BA18D0CA3AC0993F9939F3473EE",
+        "LastWriteTimeUtc":  "2026-07-18T11:26:57.6274840Z"
+    },
+    {
+        "Role":  "controlled-script-B3.2_Release.ps1",
+        "Path":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Release.ps1",
+        "RelativePath":  "tools\\scripts\\B3.2_Release.ps1",
+        "SizeBytes":  15952,
+        "SHA256":  "4358EC1DC9460D135863F5F5AADEEF41C3572CCDA5750185698CDD7440ABBA57",
+        "LastWriteTimeUtc":  "2026-07-18T10:58:52.9849800Z"
+    },
+    {
+        "Role":  "controlled-script-B3.2_Verify.ps1",
+        "Path":  "D:\\OneDrive\\SQD\\tools\\scripts\\B3.2_Verify.ps1",
+        "RelativePath":  "tools\\scripts\\B3.2_Verify.ps1",
+        "SizeBytes":  34423,
+        "SHA256":  "8EC4F34F5F340EE8BFB44939D5A78DF6C03B66E4EBE85CC9C42B6906588FC42C",
+        "LastWriteTimeUtc":  "2026-07-18T11:48:51.1514099Z"
+    }
+]

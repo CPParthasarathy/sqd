@@ -1,0 +1,7 @@
+﻿"Role","Path","RelativePath","SizeBytes","SHA256","LastWriteTimeUtc"
+"application-bin","D:\OneDrive\SQD\build\b3.2\production\sqd_firmware.bin","build\b3.2\production\sqd_firmware.bin","124496","445B662F8448CF2CC4E5BA82B8EA6DB6958D0709F9EC5E05447888FCAD6E2C6F","2026-07-18T09:26:04.9208926Z"
+"application-elf","D:\OneDrive\SQD\build\b3.2\production\sqd_firmware.elf","build\b3.2\production\sqd_firmware.elf","3464196","B461E8A46218A098B2B2E3E16B64BD28F5F0873345DE61397E79BF54B456CA16","2026-07-18T09:26:04.5888181Z"
+"flash-0x0","D:\OneDrive\SQD\build\b3.2\production\bootloader\bootloader.bin","build\b3.2\production\bootloader\bootloader.bin","17776","6B4223FEB2944153153E0DE371B2D94DEA9837185F88C4DBB4281516C64C429B","2026-07-18T09:25:48.4643234Z"
+"flash-0x8000","D:\OneDrive\SQD\build\b3.2\production\partition_table\partition-table.bin","build\b3.2\production\partition_table\partition-table.bin","3072","7F00B6C042A89B15B0CAC534F82ED988CAF29278FF5700B0C511EB1B5BB7C820","2026-07-18T09:18:41.3963836Z"
+"generated-sdkconfig","D:\OneDrive\SQD\build\b3.2\production\sdkconfig","build\b3.2\production\sdkconfig","89997","10EF34E15B25EDA13C752ABCE33314EF3C6EC25B67735BC2EA8B836F87754F47","2026-07-18T09:18:10.8846846Z"
+"linker-map","D:\OneDrive\SQD\build\b3.2\production\sqd_firmware.map","build\b3.2\production\sqd_firmware.map","3397034","1AE23E22F238C93A47472FD917B7FBE80FC5ED53200759519C30466F7FEB6FBE","2026-07-18T09:26:04.5995240Z"

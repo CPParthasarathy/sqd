@@ -1,0 +1,54 @@
+{
+    "work_package":  "B3.2",
+    "operation":  "controlled-build",
+    "status":  "PASS",
+    "timestamp_local":  "2026-07-18T11:12:47.2547477+02:00",
+    "profile":  "validation",
+    "clean_build":  true,
+    "repository":  {
+                       "root":  "D:\\OneDrive\\SQD",
+                       "branch":  "feat/b3.2-controlled-tooling",
+                       "commit":  "fa275874dc36887e8f38f5ac470ae196564c3833",
+                       "commit_short":  "fa275874dc36",
+                       "tracked_tree_clean":  true
+                   },
+    "toolchain":  {
+                      "idf_path":  "D:\\esp\\v6.0.2\\esp-idf",
+                      "idf_version":  "ESP-IDF v6.0.2",
+                      "python":  "C:\\Users\\parth\\.espressif\\python_env\\idf6.0_py3.11_env\\Scripts\\python.exe",
+                      "target":  "esp32s3"
+                  },
+    "product":  {
+                    "project_name":  "sqd_firmware",
+                    "hardware_compatibility":  "heltec-wifi-lora-32-v3",
+                    "build_profile":  "validation"
+                },
+    "configuration":  {
+                          "common_defaults":  "D:\\OneDrive\\SQD\\sdkconfig.defaults",
+                          "profile_defaults":  "D:\\OneDrive\\SQD\\sdkconfig.defaults.validation",
+                          "generated_sdkconfig":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\sdkconfig",
+                          "generated_sdkconfig_sha256":  "C4DEC763B8D2786F1A289ACE7BF70F69E12E983C1C3F54011970B54763A92DFC"
+                      },
+    "build":  {
+                  "directory":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation",
+                  "duration_seconds":  461.612,
+                  "stdout":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_build_stdout_20260718_110446.txt",
+                  "stderr":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_build_stderr_20260718_110446.txt"
+              },
+    "size_reports":  {
+                         "text":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_size_20260718_110446.txt",
+                         "json":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_size_20260718_110446.json",
+                         "text_command_duration_seconds":  5.057,
+                         "json_command_duration_seconds":  4.019
+                     },
+    "application_binary":  {
+                               "path":  "D:\\OneDrive\\SQD\\build\\b3.2\\validation\\sqd_firmware.bin",
+                               "relative_path":  "build\\b3.2\\validation\\sqd_firmware.bin",
+                               "size_bytes":  160352,
+                               "sha256":  "FD185F205942693061728946D16155F1150D198625EE9085CE9C94DC2A9BEB4C"
+                           },
+    "manifests":  {
+                      "csv":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_artifact_manifest_20260718_110446.csv",
+                      "json":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_validation_artifact_manifest_20260718_110446.json"
+                  }
+}

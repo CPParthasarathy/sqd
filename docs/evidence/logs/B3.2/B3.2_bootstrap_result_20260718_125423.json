@@ -1,0 +1,62 @@
+{
+    "work_package":  "B3.2",
+    "operation":  "controlled-tooling-bootstrap",
+    "status":  "PASS",
+    "timestamp_local":  "2026-07-18T12:54:33.6983720+02:00",
+    "repository":  {
+                       "root":  "D:\\OneDrive\\SQD",
+                       "branch":  "feat/b3.2-controlled-tooling",
+                       "commit":  "fa275874dc36887e8f38f5ac470ae196564c3833",
+                       "commit_short":  "fa275874dc36",
+                       "tracked_tree_clean":  true
+                   },
+    "toolchain":  {
+                      "idf_path":  "D:\\esp\\v6.0.2\\esp-idf",
+                      "idf_version":  "ESP-IDF v6.0.2",
+                      "python":  "C:\\Users\\parth\\.espressif\\python_env\\idf6.0_py3.11_env\\Scripts\\python.exe",
+                      "target":  "esp32s3"
+                  },
+    "hardware_compatibility":  "heltec-wifi-lora-32-v3",
+    "device_required":  true,
+    "detected_serial_ports":  [
+                                  {
+                                      "Port":  "COM3",
+                                      "Name":  "Silicon Labs CP210x USB to UART Bridge (COM3)",
+                                      "Description":  "Silicon Labs CP210x USB to UART Bridge",
+                                      "PnpDeviceId":  "USB\\VID_10C4\u0026PID_EA60\\0001"
+                                  }
+                              ],
+    "profile_checks":  [
+                           {
+                               "Profile":  "debug",
+                               "CommonDefaults":  "D:\\OneDrive\\SQD\\sdkconfig.defaults",
+                               "OverlayDefaults":  "D:\\OneDrive\\SQD\\sdkconfig.defaults.debug",
+                               "CMakeValue":  "D:/OneDrive/SQD/sdkconfig.defaults;D:/OneDrive/SQD/sdkconfig.defaults.debug",
+                               "Status":  "PASS"
+                           },
+                           {
+                               "Profile":  "validation",
+                               "CommonDefaults":  "D:\\OneDrive\\SQD\\sdkconfig.defaults",
+                               "OverlayDefaults":  "D:\\OneDrive\\SQD\\sdkconfig.defaults.validation",
+                               "CMakeValue":  "D:/OneDrive/SQD/sdkconfig.defaults;D:/OneDrive/SQD/sdkconfig.defaults.validation",
+                               "Status":  "PASS"
+                           },
+                           {
+                               "Profile":  "production",
+                               "CommonDefaults":  "D:\\OneDrive\\SQD\\sdkconfig.defaults",
+                               "OverlayDefaults":  "D:\\OneDrive\\SQD\\sdkconfig.defaults.production",
+                               "CMakeValue":  "D:/OneDrive/SQD/sdkconfig.defaults;D:/OneDrive/SQD/sdkconfig.defaults.production",
+                               "Status":  "PASS"
+                           }
+                       ],
+    "powershell_syntax":  {
+                              "status":  "PASS",
+                              "files_checked":  5
+                          },
+    "required_files":  {
+                           "status":  "PASS",
+                           "count":  9,
+                           "manifest_csv":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_bootstrap_file_manifest_20260718_125423.csv",
+                           "manifest_json":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_bootstrap_file_manifest_20260718_125423.json"
+                       }
+}

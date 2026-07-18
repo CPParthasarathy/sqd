@@ -1,0 +1,172 @@
+{
+    "work_package":  "B3.2",
+    "operation":  "hardware-identity-and-transport-check",
+    "scope":  "identity-transport-and-production-boot",
+    "status":  "PASS",
+    "timestamp_local":  "2026-07-18T13:45:49.1796800+02:00",
+    "limitation":  "Board peripheral functions require dedicated self-test firmware and are recorded as NOT_TESTED.",
+    "repository":  {
+                       "root":  "D:\\OneDrive\\SQD",
+                       "branch":  "feat/b3.2-controlled-tooling",
+                       "commit":  "fa275874dc36887e8f38f5ac470ae196564c3833",
+                       "commit_short":  "fa275874dc36",
+                       "tracked_tree_clean":  true
+                   },
+    "toolchain":  {
+                      "idf_path":  "D:\\esp\\v6.0.2\\esp-idf",
+                      "idf_version":  "ESP-IDF v6.0.2",
+                      "esptool":  "5.3.1 or active ESP-IDF environment version",
+                      "target":  "esp32s3"
+                  },
+    "device":  {
+                   "hardware_compatibility":  "heltec-wifi-lora-32-v3",
+                   "serial_port":  "COM3",
+                   "serial_device":  "Silicon Labs CP210x USB to UART Bridge (COM3)",
+                   "pnp_device_id":  "USB\\VID_10C4\u0026PID_EA60\\0001",
+                   "chip":  "ESP32-S3",
+                   "revision":  "v0.2",
+                   "features":  "Wi-Fi, BT 5 (LE), Dual Core + LP Core, 240MHz, Embedded Flash 8MB (XMC)",
+                   "crystal":  "40MHz",
+                   "flash_size":  "8MB",
+                   "mac":  "68:ee:8f:69:db:d8"
+               },
+    "totals":  {
+                   "pass":  8,
+                   "fail":  0,
+                   "not_tested":  7,
+                   "total":  15
+               },
+    "checks":  [
+                   {
+                       "Id":  "H01",
+                       "Description":  "MCU family identity",
+                       "Status":  "PASS",
+                       "Expected":  "ESP32-S3",
+                       "Observed":  "ESP32-S3",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_chip_id_stdout_20260718_134518.txt"
+                   },
+                   {
+                       "Id":  "H02",
+                       "Description":  "MCU silicon revision reported",
+                       "Status":  "PASS",
+                       "Expected":  "Reported by esptool",
+                       "Observed":  "v0.2",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_chip_id_stdout_20260718_134518.txt"
+                   },
+                   {
+                       "Id":  "H03",
+                       "Description":  "Integrated radio capabilities",
+                       "Status":  "PASS",
+                       "Expected":  "Wi-Fi and BT 5",
+                       "Observed":  "Wi-Fi, BT 5 (LE), Dual Core + LP Core, 240MHz, Embedded Flash 8MB (XMC)",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_chip_id_stdout_20260718_134518.txt"
+                   },
+                   {
+                       "Id":  "H04",
+                       "Description":  "Crystal frequency",
+                       "Status":  "PASS",
+                       "Expected":  "40MHz",
+                       "Observed":  "40MHz",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_chip_id_stdout_20260718_134518.txt"
+                   },
+                   {
+                       "Id":  "H05",
+                       "Description":  "Unique device MAC address",
+                       "Status":  "PASS",
+                       "Expected":  "Valid 48-bit MAC",
+                       "Observed":  "68:ee:8f:69:db:d8",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_chip_id_stdout_20260718_134518.txt"
+                   },
+                   {
+                       "Id":  "H06",
+                       "Description":  "External SPI flash capacity",
+                       "Status":  "PASS",
+                       "Expected":  "8MB",
+                       "Observed":  "8MB",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_flash_id_stdout_20260718_134518.txt"
+                   },
+                   {
+                       "Id":  "H07",
+                       "Description":  "USB-to-UART transport identity",
+                       "Status":  "PASS",
+                       "Expected":  "Silicon Labs CP210x",
+                       "Observed":  "Silicon Labs CP210x USB to UART Bridge (COM3)",
+                       "Evidence":  "USB\\VID_10C4\u0026PID_EA60\\0001"
+                   },
+                   {
+                       "Id":  "H08",
+                       "Description":  "Production boot over physical hardware",
+                       "Status":  "PASS",
+                       "Expected":  "ROM, reset reason, entry point, zero fatal markers",
+                       "Observed":  "ROM=True; Reset=True; Entry=True; Fatal=0",
+                       "Evidence":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_result_20260718_134534.json"
+                   },
+                   {
+                       "Id":  "H09",
+                       "Description":  "SX1262 LoRa radio functional test",
+                       "Status":  "NOT_TESTED",
+                       "Expected":  "Dedicated hardware self-test firmware",
+                       "Observed":  "Not exercised by the current minimal firmware",
+                       "Evidence":  ""
+                   },
+                   {
+                       "Id":  "H10",
+                       "Description":  "OLED display functional test",
+                       "Status":  "NOT_TESTED",
+                       "Expected":  "Dedicated hardware self-test firmware",
+                       "Observed":  "Not exercised by the current minimal firmware",
+                       "Evidence":  ""
+                   },
+                   {
+                       "Id":  "H11",
+                       "Description":  "User button and reset-button input test",
+                       "Status":  "NOT_TESTED",
+                       "Expected":  "Dedicated hardware self-test firmware",
+                       "Observed":  "Not exercised by the current minimal firmware",
+                       "Evidence":  ""
+                   },
+                   {
+                       "Id":  "H12",
+                       "Description":  "Board LED output test",
+                       "Status":  "NOT_TESTED",
+                       "Expected":  "Dedicated hardware self-test firmware",
+                       "Observed":  "Not exercised by the current minimal firmware",
+                       "Evidence":  ""
+                   },
+                   {
+                       "Id":  "H13",
+                       "Description":  "Battery-voltage ADC test",
+                       "Status":  "NOT_TESTED",
+                       "Expected":  "Dedicated hardware self-test firmware",
+                       "Observed":  "Not exercised by the current minimal firmware",
+                       "Evidence":  ""
+                   },
+                   {
+                       "Id":  "H14",
+                       "Description":  "Wi-Fi RF association test",
+                       "Status":  "NOT_TESTED",
+                       "Expected":  "Dedicated hardware self-test firmware",
+                       "Observed":  "Not exercised by the current minimal firmware",
+                       "Evidence":  ""
+                   },
+                   {
+                       "Id":  "H15",
+                       "Description":  "Bluetooth LE advertising test",
+                       "Status":  "NOT_TESTED",
+                       "Expected":  "Dedicated hardware self-test firmware",
+                       "Observed":  "Not exercised by the current minimal firmware",
+                       "Evidence":  ""
+                   }
+               ],
+    "evidence":  {
+                     "summary":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_identity_summary_20260718_134518.txt",
+                     "result_json":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_identity_result_20260718_134518.json",
+                     "results_csv":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_identity_results_20260718_134518.csv",
+                     "chip_stdout":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_chip_id_stdout_20260718_134518.txt",
+                     "chip_stderr":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_chip_id_stderr_20260718_134518.txt",
+                     "flash_stdout":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_flash_id_stdout_20260718_134518.txt",
+                     "flash_stderr":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_hardware_flash_id_stderr_20260718_134518.txt",
+                     "production_monitor_result":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_result_20260718_134534.json",
+                     "production_monitor_transcript":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_production_monitor_transcript_20260718_134534.txt"
+                 }
+}

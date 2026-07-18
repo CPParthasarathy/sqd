@@ -1,0 +1,35 @@
+{
+    "work_package":  "B3.2",
+    "operation":  "controlled-flash-erase",
+    "status":  "PASS",
+    "timestamp_local":  "2026-07-18T13:37:35.7248317+02:00",
+    "authorization":  {
+                          "confirm_erase":  true
+                      },
+    "repository":  {
+                       "root":  "D:\\OneDrive\\SQD",
+                       "branch":  "feat/b3.2-controlled-tooling",
+                       "commit":  "fa275874dc36887e8f38f5ac470ae196564c3833",
+                       "commit_short":  "fa275874dc36",
+                       "tracked_tree_clean":  true
+                   },
+    "toolchain":  {
+                      "idf_path":  "D:\\esp\\v6.0.2\\esp-idf",
+                      "idf_version":  "ESP-IDF v6.0.2",
+                      "python":  "C:\\Users\\parth\\.espressif\\python_env\\idf6.0_py3.11_env\\Scripts\\python.exe",
+                      "target":  "esp32s3"
+                  },
+    "device":  {
+                   "port":  "COM3",
+                   "name":  "Silicon Labs CP210x USB to UART Bridge (COM3)",
+                   "description":  "Silicon Labs CP210x USB to UART Bridge",
+                   "pnp_device_id":  "USB\\VID_10C4\u0026PID_EA60\\0001",
+                   "baud":  115200,
+                   "hardware_compatibility":  "heltec-wifi-lora-32-v3"
+               },
+    "erase":  {
+                  "duration_seconds":  5.039,
+                  "stdout":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_erase_flash_stdout_20260718_133725.txt",
+                  "stderr":  "D:\\OneDrive\\SQD\\docs\\evidence\\logs\\B3.2\\B3.2_erase_flash_stderr_20260718_133725.txt"
+              }
+}

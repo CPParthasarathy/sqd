@@ -1,0 +1,28 @@
+============================================================
+B3.2 CONTROLLED BUILD
+============================================================
+Status:                    PASS
+Timestamp:                 2026-07-18T11:12:47.2567475+02:00
+Profile:                   validation
+Build mode:                clean
+Repository:                D:\OneDrive\SQD
+Branch:                    feat/b3.2-controlled-tooling
+Commit:                    fa275874dc36887e8f38f5ac470ae196564c3833
+ESP-IDF:                   ESP-IDF v6.0.2
+Target:                    esp32s3
+Hardware compatibility:    heltec-wifi-lora-32-v3
+Project:                   sqd_firmware
+Build directory:           D:\OneDrive\SQD\build\b3.2\validation
+Build duration seconds:    461.612
+Application binary:        D:\OneDrive\SQD\build\b3.2\validation\sqd_firmware.bin
+Application bytes:         160352
+Application SHA256:        FD185F205942693061728946D16155F1150D198625EE9085CE9C94DC2A9BEB4C
+Generated sdkconfig:       D:\OneDrive\SQD\build\b3.2\validation\sdkconfig
+Generated config SHA256:   C4DEC763B8D2786F1A289ACE7BF70F69E12E983C1C3F54011970B54763A92DFC
+Text size report:          D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_validation_size_20260718_110446.txt
+JSON size report:          D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_validation_size_20260718_110446.json
+Artifact manifest CSV:     D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_validation_artifact_manifest_20260718_110446.csv
+Artifact manifest JSON:    D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_validation_artifact_manifest_20260718_110446.json
+Build result JSON:         D:\OneDrive\SQD\docs\evidence\logs\B3.2\B3.2_validation_build_result_20260718_110446.json
+
+B3.2 CONTROLLED BUILD PASSED
