@@ -12,7 +12,7 @@ classification: "Internal Engineering"
 created: "2026-07-14"
 baseline_gate: "G-A"
 platform: "ESP32-S3, 8 MB flash baseline"
-toolchain: "ESP-IDF 5.5.x"
+toolchain: "ESP-IDF 6.0.x"
 ---
 
 # Evidence Repository Instructions
